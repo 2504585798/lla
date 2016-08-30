@@ -1,0 +1,39 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">手机</li>
+        <li class="li2">手机功能</li>
+        <li class="li2">手机配置</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span>以后手机上面需要配置的，都尽量在这里写！</p>
+    <form  target="baocms_frm" action="<{:U('setting/mobile')}>" method="post">
+        <div class="tableBox">
+            <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">刮刮乐ID：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[guaguale]" value="<{$CONFIG.mobile.guaguale}>" class="manageInput  w80" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">抽奖ID：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[choujiang]" value="<{$CONFIG.mobile.choujiang}>" class="manageInput  w80" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">摇一摇ID：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[yaoyiyao]" value="<{$CONFIG.mobile.yaoyiyao}>" class="manageInput  w80" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="smtQr"><input type="submit" value="确认保存" class="smtQrIpt" /></div>
+    </form>
+</div>
+<include  file='public:footer'/>       

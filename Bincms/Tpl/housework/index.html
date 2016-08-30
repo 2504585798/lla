@@ -1,0 +1,75 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">手机</li>
+        <li class="li2">家政服务</li>
+        <li class="li2 li3">家政列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="right">
+                <form  method="post"  action="<{:U('housework/index')}>"> 
+                    <div class="seleHidden" id="seleHidden">
+                        <lable>
+                            <span>类型</span>
+                            <select name="svc_id" id="svc_id" class="selecttop">
+                                <foreach name="workTypes" item="item" key="key">
+                                    <option value="<{$key}>"><{$item}></option>
+                                </foreach>
+                            </select>
+                        </lable>
+                        <span>关键字</span>
+                        <input type="text"  class="inptText" name="keys" value="<{$housework}>"  />
+                        <input type="submit" value=" 搜索"  class="inptButton" />
+                    </div> 
+                </form>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+                        <td class="w50"><input type="checkbox" class="checkAll" rel="housework_id" /></td>
+                        <td>服务</td>
+                        <td>服务时间</td>
+                        <td>姓名</td>
+                        <td>电话</td>
+                        <td>内容</td>
+                        <td>是否真实</td>
+                        <td>查看需要金块</td>
+                        <td>发布时间</td>
+                        <td>操作</td>
+                    <foreach name="list" item="var">
+                        <tr>
+                            <td><input class="child_housework_id" type="checkbox" name="housework_id[]" value="<{$var.housework_id}>" /></td>
+                            <td><{$workTypes[$var['svc_id']]}></td>
+                            <td><{$var.svctime}></td>
+                            <td><{$var.name}></td>
+                            <td><{$var.tel}></td>
+                            <td><{$var.contents}></td>
+                            <td><eq name="var.is_real" value="1">真实需求<else/>未确认</eq></td>
+                        <td><{$var.gold}></td>
+                        <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                        <td>
+                            <{:BA('housework/edit',array("housework_id"=>$var["housework_id"]),'编辑','load','remberBtn',600,400)}>
+                            <{:BA('housework/delete',array("housework_id"=>$var["housework_id"]),'删除','act','remberBtn')}>
+                        </td>
+                        </tr>
+                    </foreach>      
+                </table>
+                <{$page}>
+            </div>
+            <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+                <div class="left">
+                    <{:BA('housework/delete','','批量删除','list','a2')}>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>  
+

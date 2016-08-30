@@ -1,0 +1,77 @@
+<include  file='public:header'/>
+
+<div class="mainBt">
+    <ul>
+        <li class="li1"> 当前位置</li>
+        <li class="li2">活动报名</li>
+
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <div class="jsglNr">
+        <div class="selectNr">
+       
+            <div class="right">
+                <form class="search_form" method="post" action="<{:U('activitysign/index')}>"> 
+                    <div class="seleHidden" id="seleHidden">
+                   
+                        <span>  联系人或电话：</span>
+                         <input type="text" name="keyword" id="keyword"  value="<{$keyword}>"   class="inptText" />
+                        <input type="submit" value="   搜索"  class="inptButton" />
+
+                    </div> 
+                </form>
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+
+
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+                 <td><input type="checkbox" class="checkAll" rel="sign_id" /></td>
+                 <td>报名ID</td>
+                <td>活动标题</td>
+                <td>用户ID</td>
+                <td>人数</td>
+                <td>手机号码</td>
+                <td>姓名</td>
+                <td>报名时间</td>
+                <td>报名IP</td>
+
+                    </tr>
+                     <foreach name="list" item="var">
+                <tr>
+                    <td><input class="child_sign_id" type="checkbox" name="sign_id[]" value="<{$var.sign_id}>" /></td>
+                    <td><{$var.sign_id}></td>
+                    <td><{$activity[$var['activity_id']]['title']}></td>
+                    <td><{$var.user_id}></td>
+                    <td><{$var.num}></td>
+                    <td><{$var.mobile}></td>
+                    <td><{$var.name}></td>
+                    <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                    <td><{$var.create_ip}></td>
+                </tr>
+            </foreach>
+                    <tr>
+                        <td colspan="20">
+                         
+                        </td>
+                    </tr>
+                </table>
+                <{$page}>
+
+            </div>
+
+
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>  
+

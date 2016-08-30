@@ -1,0 +1,97 @@
+<include  file='public:header'/>
+<div class="main">
+    <div class="mainBt">
+        <ul>
+            <li class="li1">后台首页</li>
+        </ul>
+    </div>
+    <div class="mainNr">
+        <div class="left">
+            <div class="mainLeftBox">
+                <div class="title">后台统计</div>
+                <div class="titleNr">
+                    <div class="title_bt">
+                        <ul>
+                            <li id="s1" class="titleLiHover">名称</li>
+                            <li id="s2">数量</li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                    <div class="nr">
+                        <div class="lef">
+                            <ul>
+                                <li>今日订单</li>
+                                <li class="bg">总订单</li>
+                                <li>今日充值</li>
+                                <li class="bg">总充值</li>
+                                <li>今日预约</li>
+                                <li class="bg">总预约</li>
+                              <!--   <li>今日优惠券下载 </li>
+                                <li class="bg">总优惠券下载</li> -->
+                                <li>点评</li>
+                                <li class="bg">会员数</li>
+                                <li>医院数</li>
+                              <!--   <li class="bg">消费分享</li> -->
+                            </ul>
+                        </div>
+                        <div class="lef">
+                            <ul>
+                                <li>共<span><{$counts.totay_order}></span>条订单</li>
+                                <li class="bg">共<span><{$counts.order}></span>条订单</li>
+                                <li>共<span><{$counts.totay_gold}></span>条充值</li>
+                                <li class="bg">共<span><{$counts.totay_gold}></span>条充值</li>
+                                <li>共<span><{$counts.today_yuyue}></span>条预约</li>
+                                <li class="bg">共<span><{$counts.yuyue}></span>条预约</li>
+                                <!-- <li>共<span><{$counts.today_coupon}></span>条下载</li>
+                                <li class="bg">共<span><{$counts.coupon}></span>条下载</li> -->
+                                <li>共<span><{$counts.dianping}></span>条点评</li>
+                                <li class="bg">共<span><{$counts.users}></span>个会员</li>
+                                <li>共<span><{$counts.shops}></span>医院</li>
+                                <!-- <li class="bg">共<span><{$counts.post}></span>条分享</li> -->
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="mainC1">
+                <div class="title">版权信息</div>
+                <div class="nr">
+                    <div class="lef">
+                        <ul>
+                        	<li>环境需求</li>
+                            <li>当前PHP版本</li>
+                            <li>当前mysql版本</li>
+                            <li>上传限制</li>
+                            <li>技术支持</li>
+                            <li>当前版本</li>
+                            <li>开发语言</li>
+                            <li>官方网站</li>
+                           
+                        </ul>
+                    </div>     
+                    <div class="cen">
+                        <ul>
+                            <li>PHP5.2+apache or iis+MYSQL5.1+伪静态及以上版本</li>
+                            <li><{:phpversion()}></li>
+                            <li><{:mysql_get_server_info()}></li>
+                            <li><{:ini_get("upload_max_filesize")}></li>
+                            <li>top_iter@qq.com</li>
+                            <li><{$v}></li>
+                            <li>PHP+MYSQL</li>
+                            <li>更新升级：QQ2504585798</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<include  file='public:footer'/>
+

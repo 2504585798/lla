@@ -1,0 +1,73 @@
+<include  file='public:header'/>
+
+<div class="mainBt">
+    <ul>
+        <li class="li1">功能</li>
+        <li class="li2">消费分享</li>
+        <li class="li2 li3">分享列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span>小区服务台，后期增加新功能</p>
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="left">
+                <{:BA('feedback/create','','添加内容')}>  
+            </div>
+            <div class="right">
+                <form method="post" action="<{:U('feedback/index')}>">
+                    <div class="seleHidden" id="seleHidden">
+                       
+                      
+                        <span>  关键字：</span>   <input type="text" name="keyword" value="<{$keyword|default=''}>" class="inptText" /><input type="submit" class="inptButton" value="  搜索" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+                        <td class="w50"><input type="checkbox" class="checkAll" rel="post_id" /></td>
+                        <td class="w50">ID</td>
+                        <td>标题</td>
+                        <td>用户</td>
+                        <td>内容</td>
+                        <td>回复</td>
+                        <td>创建时间</td>
+                        <td>创建IP</td>
+                        <td>操作</td>
+                    </tr>
+					
+                    <foreach name="list" item="var">
+					
+                        <tr>
+                            <td><input class="child_post_id" type="checkbox" name="post_id[]" value="<{$var.post_id}>" /></td>
+                            <td><{$var.feed_id}></td>
+                            <td><{$var.title}></td>
+                            <td><{$users[$var['user_id']]['account']}>(<{$var.user_id}>)</td>
+                            <td><{$var.details}></td>
+                            <td><{$var.reply}></td>
+                            <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                            <td><{$var.create_ip}>(来自<{$var.create_ip_area}>)</td>
+                           
+                        <td>
+                            <{:BA('feedback/edit',array("feed_id"=>$var["feed_id"]),'编辑','','remberBtn')}>
+                            <{:BA('feedback/delete',array("feed_id"=>$var["feed_id"]),'删除','act','remberBtn')}>
+                           
+
+                        </td>
+                        </tr>
+                    </foreach>
+                </table>
+                <{$page}>
+            </div>
+            <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+                <div class="left">
+                    <{:BA('feedback/delete','','批量删除','list','a2')}>
+         
+                </div>
+            </div>
+        </form>
+    </div>
+    <include  file='public:footer'/>       

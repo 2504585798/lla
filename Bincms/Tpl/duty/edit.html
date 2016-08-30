@@ -1,0 +1,32 @@
+<div class="listBox clfx">
+    <div class="menuManage">
+        <form target="baocms_frm" action="<{:U('duty/edit',array('duty_id'=>$detail['duty_id']))}>" method="post">
+            <div class="mainScAdd">
+                <div class="tableBox">
+                    <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+
+                        <tr>
+                            <td class="lfTdBt">职务：</td>
+                            <td class="rgTdBt"><input type="text" name="data[name]" value="<{$detail.name|default=''}>" class="scAddTextName w150" />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lfTdBt">排序：</td>
+                            <td class="rgTdBt"><input type="text" name="data[dutyorder]" value="<{$detail.dutyorder|default=''}>" class="scAddTextName w150" />
+                                <code>数字越小越高</code>
+                            </td>
+                        </tr>
+                      
+                    </table>
+                </div>
+                <div class="smtQr"><input type="submit" value="确定编辑" class="smtQrIpt" /></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+

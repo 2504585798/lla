@@ -1,0 +1,57 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">设置</li>
+        <li class="li2">职称设置</li>
+        <li class="li2 li3">职称管理</li>
+    </ul>
+</div>
+<div class="main-jsgl">
+    <p class="attention"><span>注意：</span>这里可以添加职称</p>
+    <div class="jsglNr">
+        <div class="selectNr" style="margin: 10px 20px;">
+            <div class="left">
+                <{:BA('profess/create','remberBtn','添加职称')}>
+            </div>
+            <div class="right">
+                <form method="post" action="<{:U('profess/index')}>">
+                    <span class="search_span">职称名：</span><input type="text" name="keyword" value="<{$keyword}>" class="inptText" /> <input type="submit" class="inptButton" value="  搜索" />
+                </form>
+            </div>
+        </div>
+        <form target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+                        <td><input type="checkbox" class="checkAll" rel="profess_id" /></td>
+                        <td>职称ID</td>
+                        <td>职称名</td>
+                        <td>排序</td>
+                        <td>操作</td>
+                    </tr>
+                    <foreach name="list" item="var">
+                        <tr>
+                            <td><input class="child_profess_id" type="checkbox" name="profess_id[]" value="<{$var.profess_id}>" /></td>
+                            <td><{$var.profess_id}></td>
+                            <td><{$var.name}></td>
+                            <td><{$var.professorder}></td>
+                        <td>
+						  <{:BA('profess/edit',array("profess_id"=>$var["profess_id"]),'编辑','load','remberBtn',600,550)}>
+						    
+                            <{:BA('profess/delete',array("profess_id"=>$var["profess_id"]),'删除','act','remberBtn')}>
+                        </td>
+                        </tr>
+                    </foreach>
+                </table>
+                <{$page}>
+            </div>
+            <div class="selectNr">
+                <div class="left">
+                    <{:BA('profess/delete','','批量删除','list','a2')}>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<include  file='public:footer'/>       

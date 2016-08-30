@@ -1,0 +1,147 @@
+@charset "utf-8";
+.bottom_box {
+	width: 100%;
+	position: relative;
+	height: 1200px;
+}
+.bottom_box .leftMenu {
+	  background-color: #293038;
+	  border-top: solid 23px #000;
+	left: 0;
+	/*min-height: 900px;*/
+	padding-top: 10px;
+	text-align: center;
+	top: 0;
+	z-index: 5;
+	position: absolute;
+	width: 200px;
+	height: 100%;
+}
+
+.bottom_box .leftMenu .menuClik {
+	padding: 10px;
+	overflow: hidden;
+	height: auto;
+	width: 200px;
+}
+.bottom_box .leftMenu .menuClik .left {
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #FFF;
+	height: 32px;
+	width: 52px;
+	background-color: #1f7ac8;
+	margin-right: 12px;
+	line-height: 32px;
+	background-image: url(../images/ico_03.png);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	text-align: left;
+	padding-left: 32px;
+	cursor: pointer;
+}
+.bottom_box .leftMenu .menuClik .center {
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #FFF;
+	height: 32px;
+	width: 52px;
+	background-color: #009944;
+	line-height: 32px;
+	text-align: center;
+	background-image: url(../images/ico_05.png);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	text-align: left;
+	padding-left: 32px;
+	cursor: pointer;
+}
+.bottom_box .leftMenu .leftMenu_ul {
+	display: block;
+	width: 198px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+
+	border-left-style: solid;
+
+
+	position: relative;
+	height: auto;
+}
+.bottom_box .leftMenu .leftMenu_ul .leftMenu_li {
+	height: auto;
+	  border-bottom: 1px solid #000;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-size: 14px;
+	line-height: 45px;
+	color: #307bcb;
+	text-align: left;
+	position: relative;
+	font-family: "微软雅黑";
+	width: 198px;
+	display: block;
+	z-index: 0;
+}
+.leftMenu_li .leftMenu_a {
+	display: block;
+	background-image: url(../images/leftico_13.png);
+	background-repeat: no-repeat;
+	background-position: 168px center;
+	color: #fff;
+	position: relative;
+	padding-left: 30px;
+}
+.leftNav2 {
+	width: 199px;
+	height:auto;
+	  background: #D9DEE4;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dbdbdb;
+	display:none;
+}
+.leftNav2 li {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 30px;
+	color: #545454;
+}
+.leftNav2 li:hover {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 30px;
+	color: #545454;
+	  background-color: #F4F6F8;
+}
+.leftNav2 li a {
+        text-indent: 50px;
+	color: #545454;
+        width: 198px;
+        display: block;
+}
+
+	
+.curHover {
+	color: #333 !important;
+}
+.currents {
+	background-image: url(../images/leftico_on_13.png) !important;
+}
+.current{
+    height: 28px;
+    line-height: 28px;
+    padding: 0px 10px;
+    background: #0099cc;
+    color: #fff !important;
+    border-radius: 3px;
+    border: 1px solid #0099cc;
+}
+.rightMenu {
+	margin-left: 200px;
+	height: 100%;
+}

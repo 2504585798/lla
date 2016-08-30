@@ -1,0 +1,124 @@
+
+<include  file='public:header'/>
+
+<div class="mainBt">
+    <ul>
+        <li class="li1">日记</li>
+        <li class="li2">日记管理</li>
+        <li class="li2 li3">日记列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="left">
+                <{:BA('userdiary/create','','添加日记')}>
+            </div>
+            <div class="right">
+                <form class="search_form" method="post" action="<{:U('diary/index')}>"> 
+                    <div class="seleHidden" id="seleHidden">
+                        <div class="seleK">
+                            <label>
+                                <input type="hidden" id="doctor_id" name="doctor_id" value="<{$doctor_id|default=''}>"/>
+                                <input type="text"   id="doctor_name" name="doctor_name" value="<{$doctor_name}>" class="inptText w200" />
+                                <a  href="<{:U('doctor/select')}>" mini="select" w="800" h="600" class="sumit">选择医生</a>  
+                            </label>
+                            <label>
+                                <span>分类</span>
+                                <select id="cate_id" name="cate_id" class="selecttop">
+                                    <option value="0">请选择...</option>
+                                    <foreach name="cates" item="var">
+                                        <eq name="var.parent_id" value="0">
+                                        <option value="<{$var.cate_id}>"  <eq name="var.cate_id" value="$cate_id">selected="selected"</eq> ><{$var.cate_name}></option>                
+                                        <foreach name="cates" item="var2">
+                                            <eq name="var2.parent_id" value="$var.cate_id">
+                                            <option value="<{$var2.cate_id}>"  <eq name="var2.cate_id" value="$cate_id">selected="selected"</eq> > &nbsp;&nbsp;<{$var2.cate_name}></option>
+                                            </eq>
+                                        </foreach>
+                                        </eq>
+                                    </foreach>
+                                </select>
+                            </label>
+                            <label>
+                                <span>状态</span>
+                                <select name="audit" class="selecttop">
+                                    <option value="0"  >全部</option>
+                                    <option value="-1" <eq name="audit" value="-1">selected="selected"</eq> >等待审核</option>
+                                    <option value="1" <eq name="audit" value="1">selected="selected"</eq>>正常</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>关键字：</span>
+                                <input type="text" name="keyword" id="keyword"  value="<{$keyword}>"   class="inptText" />
+                                <input type="submit" value="  搜索"  class="inptButton" />
+                            </label>
+                        </div>
+                    </div> 
+                </form>
+
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+
+                        <td class="w50"><input type="checkbox" class="checkAll" rel="item_id" /></td>
+                        <td class="w50">ID</td>
+                        <td>日记标题</td>
+                         <td>所属项目</td>
+						 <td>日记描述</td>
+						<td>手术医生</td>
+                        <td>图片</td>
+                        
+                        <td>项目价格</td>
+                        
+                       
+                        <td>创建时间</td>
+                       
+                        <td>是否审核</td>
+                        <td>操作</td>
+
+                    </tr>
+                    <volist name="list" id="var" key="index"> 
+                        <tr>
+                            <td><input class="child_item_id" type="checkbox" name="item_id[]" value="<{$var.item_id}>" /> </td>
+                            <td><{$var.item_id}></td>
+							<td><{$var.title}></td>
+                            <td><{$hospitals[$var['hospital_id']]['hospital_name']}></td>
+                           
+                            <td><img src="__ROOT__/attachs/<{$var.photo}>" class="w80" /></td>
+                           
+                            <td><{$var.item_price}></td>
+                            <td><{$var.sold_num}></td>
+                           
+                            <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                            <td><{$var.create_ip_area}><{$var.create_ip}></td>
+                            <!--<td><eq name="var.is_seckill" value="0">未开启<else/>正在秒杀</eq></td> -->
+                            <td><eq name="var.audit" value="0">等待审核<else/>正常</eq></td>
+                        <td>
+                           <!--  <neq name="var.audit" value="0">
+                            <{:BA('zhuanti/addgoods',array("goods_id"=>$var["item_id"]),'专题','','remberBtn')}>
+                            </neq> -->
+                            <{:BA('userdiary/edit',array("item_id"=>$var["item_id"]),'编辑','','remberBtn')}>
+                            <{:BA('userdiary/delete',array("item_id"=>$var["item_id"]),'删除','act','remberBtn')}>
+                            <eq name="var.audit" value="0"> <{:BA('userdiary/audit',array("item_id"=>$var["item_id"]),'审核','act','remberBtn')}> </eq>
+                        </td>
+                        </tr>
+                    </volist>
+                </table>
+                <{$page}>
+            </div>
+            <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+                <div class="left">
+                    <{:BA('userdiary/delete','','批量删除','list',' a2')}>
+                    <{:BA('userdiary/audit','','批量审核','list',' remberBtn')}>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>  
+

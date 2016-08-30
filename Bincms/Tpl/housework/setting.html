@@ -1,0 +1,35 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">手机</li>
+        <li class="li2">家政服务</li>
+        <li class="li2 li3">家政项目配置</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <div class="jsglNr">
+
+            <div class="tableBox">
+                <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+                        <td class="w50">ID</td>
+                        <td>服务</td>
+                        <td>操作</td>
+                 
+                    <foreach name="workTypes" key="key" item="var">
+                        <tr>
+                            <td><{$key}></td>
+                            <td><{$var}></td>
+                        <td>
+                            <{:BA('housework/setting2',array("id"=>$key),'设置','','remberBtn')}>
+                        </td>
+                        </tr>
+                    </foreach>      
+                </table>
+        
+            </div>
+     
+    </div>
+</div>
+<include  file='public:footer'/>  
+

@@ -1,0 +1,155 @@
+<include  file='public:header'/>
+
+<div class="mainBt">
+    <ul>
+        <li class="li1">家政设置</li>
+        <li class="li2">家政项目配置</li>
+        <li class="li2 li3">   <{$workTypes[$detail['id']]}></li>
+    </ul>
+</div>
+<div class="mainScAdd ">
+
+    <div class="tableBox">
+        <form  target="baocms_frm" action="<{:U('housework/setting2',array('id'=>$detail['id']))}>" method="post">
+            <div class="mainScAdd">
+                <div class="tableBox">
+                    <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                        <tr>
+                            <td class="lfTdBt">服务项目：</td>
+                            <td class="rgTdBt">
+                                <{$workTypes[$detail['id']]}>
+                            </td>
+                        </tr> 
+                        
+                        
+                        
+                        <tr>
+                            <td class="lfTdBt">支持地区：</td>
+                            <td class="rgTdBt">
+							<volist name="citys" id="c">
+								<label><input type="checkbox" class="chkcities" title="全选/反选该城市所有地区" value="<{$c['city_id']}>" /><strong><{$c['name']}>:</strong></label>
+								<volist name="areas" id="v">
+									<if condition="$v['city_id'] eq $c['city_id']">
+									<label><input class="area_<{$c['city_id']}>" name="data[areas][]" type="checkbox" value="<{$v['area_id']}>" <if condition="stristr(',' . $detail.areas . ',', $v.area_id . ',')">checked="checked"</if> /><{$v['area_name']}></label>
+									</if>
+								</volist>
+							</volist>
+							<script type="text/javascript">
+							$('.chkcities').click(function(){
+								var cityid = $(this).val();
+								$(".area_" + cityid).attr("checked", this.checked);
+							});
+							</script>
+                            </td>
+                        </tr>
+                        
+                        
+                        
+                        
+                        <tr>
+                            <td class="lfTdBt">服务建议：</td>
+                            <td class="rgTdBt">
+                                <input name="title" value="<{$detail.title}>" type="text" class="manageInput" />
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="lfTdBt">服务价格：</td>
+                            <td class="rgTdBt">
+                                <input name="price" value="<{:round($detail['price']/100,2)}>" type="text" style="width: 80px;" class="manageInput" />
+                                元/
+                                <input name="unit" value="<{$detail['unit']}>" type="text" style="width: 80px;" class="manageInput" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lfTdBt">工具：</td>
+                            <td class="rgTdBt">
+                                <input name="gongju" value="<{$detail.gongju}>" type="text" class="manageInput" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lfTdBt">
+                        <js file='__PUBLIC__/js/uploadify/jquery.uploadify.min.js'/>
+                        <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
+                        缩略图：
+                        </td>
+                        <td class="rgTdBt">
+                            <div style="width: 300px;height: 100px; float: left;">
+                                <input type="hidden" name="photo" value="<{$detail.photo}>" id="data_photo" />
+                                <input id="photo_file" name="photo_file" type="file" multiple="true" value="" />
+                            </div>
+                            <div style="width: 300px;height: 100px; float: left;">
+                                <img id="photo_img" width="80" height="80"  src="__ROOT__/attachs/<{$detail.photo|default='default.jpg'}>" />
+                                <a href="<{:U('setting/attachs')}>">缩略图设置</a>
+                                建议尺寸<{$CONFIG.attachs.lifeservice.thumb}>
+                            </div>
+                            <script>
+                                $("#photo_file").uploadify({
+                                    'swf': '__PUBLIC__/js/uploadify/uploadify.swf?t=<{$nowtime}>',
+                                    'uploader': '<{:U("app/upload/uploadify",array("model"=>"lifeservice"))}>',
+                                    'cancelImg': '__PUBLIC__/js/uploadify/uploadify-cancel.png',
+                                    'buttonText': '上传缩略图',
+                                    'fileTypeExts': '*.gif;*.jpg;*.png',
+                                    'queueSizeLimit': 1,
+                                    'onUploadSuccess': function (file, data, response) {
+                                        $("#data_photo").val(data);
+                                        $("#photo_img").attr('src', '__ROOT__/attachs/' + data).show();
+                                    }
+                                });
+
+                            </script>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td class="lfTdBt">服务时间：</td>
+                            <td class="rgTdBt">
+                                <input name="biz_time" value="<{$detail.biz_time}>" type="text" class="manageInput" />
+                            </td>
+                        </tr>
+                        <!--增加开始-->
+                        
+                        <tr>
+                            <td class="lfTdBt">联系人：</td>
+                            <td class="rgTdBt">
+                                <input name="name" value="<{$detail.name}>" type="text" class="manageInput" />
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td class="lfTdBt">联系电话：</td>
+                            <td class="rgTdBt">
+                                <input name="tel" value="<{$detail.tel}>" type="text" class="manageInput" />
+                            </td>
+                        </tr>
+                        <!--增加结束-->
+
+                        <tr>
+                            <td class="lfTdBt">服务内容：</td>
+                            <td class="rgTdBt">
+                                <script type="text/plain" id="contents" name="contents" style="width:800px;height:360px;"><{$detail.contents}></script>
+                            </td>
+                        </tr>
+                        <link rel="stylesheet" href="__PUBLIC__/umeditor/themes/default/css/umeditor.min.css" type="text/css">
+                        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.config.js"></script>
+                        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.min.js"></script>
+                        <script type="text/javascript" src="__PUBLIC__/umeditor/lang/zh-cn/zh-cn.js"></script>
+                        <script>
+                        um = UM.getEditor('contents', {
+                            imageUrl: "<{:U('app/upload/editor')}>",
+                            imagePath: '__ROOT__/attachs/editor/',
+                            lang: 'zh-cn',
+                            langPath: UMEDITOR_CONFIG.UMEDITOR_HOME_URL + "lang/",
+                            focus: false
+                        });
+                        </script>
+
+                    </table>
+                </div>
+                <div class="smtQr"><input type="submit" value="确定设置" class="smtQrIpt" /></div>
+            </div>
+        </form>
+    </div>
+</div>  
+<include  file='public:footer'/>  
