@@ -44,7 +44,7 @@ if (!file_exists(BASE_PATH . '/attachs/install.lock')) {
 
 //调试模式
 
-//ini_set('display_errors','On');
+ini_set('display_errors','On');
 
 
 
