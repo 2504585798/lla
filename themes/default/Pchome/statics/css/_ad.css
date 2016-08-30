@@ -1,0 +1,49 @@
+﻿*{margin:0;padding:0;list-style:none;border:none;}
+
+body{height:auto; background:#fff;font-family:'microsoft yahei';}
+
+/*main css*/
+
+.izl-rmenu{position:fixed; right:0px;bottom:40%;z-index:999;}
+
+.izl-rmenu .btn{width:54px;height:54px;margin-bottom:1px;cursor:pointer;position:relative;}
+
+.izl-rmenu .btn-cpfw{background:url(../images/cpfw.png) 0px 0px no-repeat; background-color:#2D96E9;}
+
+.izl-rmenu  li a.btn-cpfw:hover{background-color:#2D96E9;}
+
+.izl-rmenu li a.btn-cpfw,.izl-rmenu a.btn-cpfw:visited{background:url(../images/cpfw2.png) 0px 0px no-repeat;background-color:#81C0F2;text-decoration:none;display:block;}
+
+
+
+.izl-rmenu .btn-znq{background:url(../images/znq.png) 0px 0px no-repeat;margin-top:6px;background-color:#81C0F2;}
+
+.izl-rmenu  li a.btn-znq,.izl-rmenu a.btn-znq:visited{background:url(../images/znq.png) 0px 0px no-repeat;background-color:#81C0F2;text-decoration:none;display:block;}
+
+.izl-rmenu li a.btn-znq:hover{background-color:#2D96E9;}
+
+
+
+.izl-rmenu .btn-qqzx{background:url(../images/qqzx.png) 0px 0px no-repeat;margin-top:6px;background-color:#81C0F2;}
+
+.izl-rmenu  li a.btn-qqzx,.izl-rmenu a.btn-qqzx:visited{background:url(../images/qqzx.png) 0px 0px no-repeat;background-color:#81C0F2;text-decoration:none;display:block;}
+
+.izl-rmenu li a.btn-qqzx:hover{background-color:#2D96E9;}
+
+
+
+
+
+.izl-rmenu .btn-wba{background:url(../images/wba.png) 0px 0px no-repeat;margin-top:6px;background-color:#81C0F2;}
+
+.izl-rmenu li a.btn-wba,.izl-rmenu a.btn-wba:visited{background:url(../images/wba.png) 0px 0px no-repeat; background-color:#FFA571;text-decoration:none;display:block;}
+
+.izl-rmenu li a.btn-wba:hover{background-color:#FF853F;}
+
+.izl-rmenu li a.btn-wba .pic{position:absolute; right:54px; display:none;top:0px;width:286px;height:141px;}
+
+
+
+.izl-rmenu .btn-top{background:url(../images/fhtop.png) 0px 0px no-repeat;margin-top:6px;display:none;}
+
+.izl-rmenu .btn-top:hover{background:url(../images/fhtophover.png) no-repeat;}

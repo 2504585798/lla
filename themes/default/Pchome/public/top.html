@@ -1,0 +1,111 @@
+<include file="public:topOne" /> 
+
+<!--开始-->
+<div class="toolDiv">
+
+    <div class="logo left"><a href="/" target="_blank"><img src="__TMPL__statics/images/logo.jpg" alt="郑州法律网"/></a></div>
+
+    <div class="childWeb"> </div>
+
+    <div class="ptop">
+
+<div class="m_search">
+
+    <div class="img"><img width="80" height="26" alt="郑州法搜" src="__TMPL__statics/images/logo_fsou.jpg"></div>
+
+    <div class="hd">
+
+        <ul class="type">
+
+            <li><a alt="法律咨询" target="_blank" rel="nofollow" href=""><span>法律咨询</span></a></li>
+
+            <li class="on"><a alt="专业律师" target="_blank" rel="nofollow" href=""><span>专业律师</span></a></li>
+        </ul>
+    </div>
+
+    <div class="bd">
+
+        <!-- 咨询 -->
+
+        <div style="display:none" class="pan">
+
+            <form target="_blank" method="get">
+
+                <input type="hidden" name="m" value="search">
+
+                <input type="hidden" name="c" value="index">
+
+                <input type="hidden" name="a" value="bdsearch">
+
+                <input type="text" id="bdcsMain" onClick="this.style.color='#000000';" style="color:#999999; padding-left:5px;" onFocus="if(this.value=='请您输入问题的关键字，然后点击搜索'){this.value=''}else{this.style.color='#000000'}" value="请您输入问题的关键字，然后点击搜索" size="45" class="field-txt">
+
+
+
+                <input type="submit" class="sbtn" value="">
+
+                <a class="btn" target="_blank" href=""><img width="73" height="25" alt="提问" src="__TMPL__statics/images/btn_ask.jpg"></a>
+
+            </form>
+
+        </div>
+
+        <!-- 律师 -->
+
+        <div class="pan">
+      <form target="_blank" id="form1" name="form1" action="" method="Post">
+         <input type="hidden" name="search" value="1">
+               <input type="text" onKeyDown="if (event.keyCode==13){document.getElementById('form1').submit();return false}" onFocus="if(this.value=='输入律师姓名'){this.value=''}else{this.style.color='#000000'}" value="输入律师姓名" id="zName" name="zName" size="11" class="field-txt" style="width: 150px; padding-left:5px;">
+
+              
+                <input name="cityid" id="areaid_1" type="hidden" value="0"/><input name="zonename" id="zonename_1" type="hidden" value=""/><span id="load_area_1">                
+                
+                </span>
+				           
+                  <select name="goodsid" style="width:125px" class="field-select">
+
+                    <option value='0'>选择专长</option><option value='3361'>├ 民事类</option><option value='3367'>│├ 婚姻家庭</option><option value='3368'>│├ 遗产继承</option><option value='3369'>│├ 消费维权</option><option value='3370'>│├ 抵押担保</option><option value='3371'>│├ 合同纠纷</option><option value='3372'>│├ 劳动纠纷</option><option value='3373'>│├ 人身损害</option><option value='3374'>│├ 保险理赔</option><option value='3375'>│├ 拆迁安置</option><option value='3376'>│├ 债权债务</option><option value='3377'>│├ 医疗纠纷</option><option value='3378'>│├ 交通事故</option><option value='3362'>├ 经济类</option><option value='3379'>│├ 工程建筑</option><option value='3380'>│├ 房产纠纷</option><option value='3381'>│├ 知识产权</option><option value='3382'>│├ 合伙加盟</option><option value='3383'>│├ 个人独资</option><option value='3384'>│├ 金融证券</option><option value='3385'>│├ 银行保险</option><option value='3386'>│├ 不当竞争</option><option value='3387'>│├ 经济仲裁</option><option value='3388'>│├ 网络法律</option><option value='3389'>│├ 招标投标</option><option value='3422'>│├ 财税</option><option value='3363'>├ 刑事行政法类</option><option value='3390'>│├ 取保候审</option><option value='3391'>│├ 刑事辩护</option><option value='3392'>│├ 刑事自诉</option><option value='3393'>│├ 行政复议</option><option value='3394'>│├ 行政诉讼</option><option value='3395'>│├ 国家赔偿</option><option value='3396'>│├ 工商税务</option><option value='3397'>│├ 海关商检</option><option value='3398'>│├ 公安国安</option><option value='3364'>├ 涉外法律类</option><option value='3399'>│├ 海事海商</option><option value='3400'>│├ 国际贸易</option><option value='3401'>│├ 招商引资</option><option value='3402'>│├ 外商投资</option><option value='3403'>│├ 合资合作</option><option value='3404'>│├ WTO事务</option><option value='3405'>│├ 倾销补贴</option><option value='3406'>│├ 涉外仲裁</option><option value='3365'>├ 公司专项法律类</option><option value='3407'>│├ 公司并购</option><option value='3408'>│├ 股份转让</option><option value='3409'>│├ 企业改制</option><option value='3410'>│├ 公司清算</option><option value='3411'>│├ 破产解散</option><option value='3412'>│├ 资产拍卖</option><option value='3423'>│├ 投资融资</option><option value='3366'>├ 其他非讼法律类</option><option value='3413'>│├ 工商查询</option><option value='3414'>│├ 资信调查</option><option value='3415'>│├ 合同审查</option><option value='3416'>│├ 调解谈判</option><option value='3417'>│├ 常年顾问</option><option value='3418'>│├ 私人律师</option><option value='3419'>│├ 文书代理</option><option value='3420'>│├ 移民留学</option><option value='3421'>│├ 商帐追收</option><option value='3425'>├ 其他类</option><option value='3426'>│├ 专利权</option><option value='3427'>│├ 著作权</option><option value='3428'>│├ 行政许可</option><option value='3429'>│├ 行政处罚</option><option value='3430'>│├ 刑事诉讼</option><option value='3431'>│├ 土地纠纷</option><option value='3432'>│├ 投资融资</option><option value='3433'>│├ 损害赔偿</option><option value='3434'>│├ 私募股权</option><option value='3435'>│├ 司法鉴定</option><option value='3436'>│├ 商标权</option><option value='3437'>│├ 民事诉讼</option><option value='3438'>│├ 律师服务</option><option value='3439'>│├ 公司设立</option><option value='3440'>│├ 公司清算</option><option value='3441'>│├ 公司法务</option><option value='3442'>│├ 非诉讼</option><option value='0'>├ </option>                </select>
+
+                <a title="搜律师" href="#" onClick="if(document.getElementById('zName').value=='输入律师姓名'){document.getElementById('zName').value=''}else{};document.getElementById('form1').submit();return false;" rel="nofollow" class="btn">
+
+                    <img width="73" height="25" alt="搜索" src="__TMPL__statics/images/btn_search.jpg"></a>
+
+                    <a title="提问" rel="nofollow" href="" target="_blank" class="btn"><img width="73" height="25" alt="提问" src="__TMPL__statics/images/btn_ask.jpg"></a>
+
+            </form>
+
+        </div>
+
+        <div style="display:none" class="pan">
+
+            <form name="form_zhishi" action="#" method="post" target="_blank" id="form_zhishi">
+
+                <input type="text" name="query" onFocus="if(this.value=='请输入要查询的法律知识关键字'){this.value=''}else{this.style.color='#000000'};" value="请输入要查询的法律知识关键字" style="color:#999999" onClick="this.style.color='#000000'" onKeyDown="if (event.keyCode==13){document.getElementById('form_zhishi').submit();return false}" id="query" size="45" class="field-txt">
+
+                <a href="javascript:#" onClick="if(document.getElementById('query').value=='请输入您要搜索的关键字'){document.getElementById('query').value=''}else{};document.getElementById('form_zhishi').submit();return false" rel="nofollow" class="btn"><img width="73" height="25" alt="搜索" src="__TMPL__statics/images/btn_search.jpg"></a> <a title="发咨询" rel="nofollow" href="" target="_blank" class="btn"><img width="73" height="25" alt="提问" src="__TMPL__statics/images/btn_ask.jpg"></a>
+
+            </form>
+
+        </div>
+
+        <!-- 法规 -->
+
+        <div style="display:none" class="pan">
+
+            <form name="form_zhishi" action="#" method="post" target="_blank" id="form_zhishi_fagui">
+
+                <input type="text" name="query" id="query_fagui" onFocus="if(this.value=='请输入要查询的法规关键字') this.value=''" value="请输入要查询的法规关键字" size="45" class="field-txt">
+
+                <a onClick="if(document.getElementById('query').value=='请输入您要搜索的关键字'){document.getElementById('query_fagui').value=''}else{};document.getElementById('form_zhishi_fagui').submit();return false" target="_blank" title="搜索" rel="nofollow" href="javascript:#" class="btn"><img width="73" height="25" alt="搜索" src="__TMPL__statics/images/btn_search.jpg"></a>
+
+                <a target="_blank" title="提问" rel="nofollow" href="" class="btn"><img width="73" height="25" alt="提问" src="__TMPL__statics/images/btn_ask.jpg"></a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+   </div>  
+  </div>
+</div>

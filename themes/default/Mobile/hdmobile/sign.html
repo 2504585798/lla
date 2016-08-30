@@ -1,0 +1,42 @@
+<include  file='public:header'/>   
+<header class="top-fixed bg-yellow bg-inverse">
+	<div class="top-back">
+		<a class="top-addr" href="<{:U('hdmobile/detail',array('huodong_id'=>$detail['huodong_id']))}>"><i class="icon-angle-left"></i></a>
+	</div>
+	<div class="top-title">
+		活动报名
+	</div>
+</header>
+
+
+<form class="sign-form" target="x-frame" action="<{:U('hdmobile/sign',array('huodong_id'=>$detail['huodong_id']))}>" method="post">
+	<div class="line padding border-bottom">
+		<span class="x2">联系姓名</span><span class="x10"><input type="text" name="data[name]" value=""  /></span>
+	</div>
+	<div class="line padding border-bottom">
+		<span class="x2">手机号码</span><span class="x10"><input type="text" name="data[mobile]" value=""  /></span>
+	</div>
+	<div class="line padding border-bottom">
+		<span class="x2">参加人数</span>
+		<span class="x10">
+			<select name="data[num]">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+		</span>
+	</div>
+	<div class="blank-40"></div>
+	<div class="container">
+		<button type="submit" class="button button-block button-big bg-dot">提交报名</button>
+	</div>
+	<div class="blank-30"></div>
+</form>
+<include file="public:footer"/>

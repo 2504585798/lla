@@ -1,0 +1,57 @@
+/* CSS Document */
+
+@charset "utf-8";
+
+/* CSS Document */
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0 auto;padding:0;border:0;}
+
+body{background:#fff;color:#06457A;font-size:14px; margin-top:0px;font-family:"微软雅黑"; line-height:22px;}
+
+
+
+ul,ol{list-style-type:none;}
+
+select,input,img,select{vertical-align:middle;}
+
+a{ text-decoration:none;}
+
+
+
+.left{ float: left;}
+
+.right{ float: right;}
+
+.clearfix{ zoom:1;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+a{ outline: none;}
+
+strong{ font-weight: bold;}
+
+.hide{ display: none;}
+
+.addPading{padding-left: 20px;}
+
+.containt{width: 1200px; height:auto;}
+
+.sectionBox{margin-bottom: 20px; margin-top:15px;}
+
+.boderbot{border-bottom: 1px dashed #E8E8E8;}
+
+.boderbotT{border-bottom: 1px solid #E8E8E8;}
+
+.ptop{padding-top: 15px;}
+
+.ptopTwo{}
+
+.marginL{margin-left: -5px;}
+
+.marginT{ margin-top: 18px;}
+
+.fongtSize{font-size: 14px;}
+
+.fongtSize16{font-size: 16px;}
+
+.fontColor{color: #565a6c}

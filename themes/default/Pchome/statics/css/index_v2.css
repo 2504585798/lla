@@ -1,0 +1,1071 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+
+
+.ico-sy {
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    overflow: hidden;
+
+    background: url('../images/ico-sy.png') no-repeat;
+
+}
+
+.i-sy1 {
+
+    width:27px; height:13px;
+
+    background-position:0 0;
+
+}
+
+.i-sy2 {
+
+    width:24px; height:11px;
+
+    background-position:0 -15px;
+
+}
+
+.i-sy3, .i-sy4, .i-sy5, .i-sy6 {
+
+    width:18px; height:16px;
+
+}
+
+.i-sy3 { background-position:0 -35px; }
+
+.i-sy4 { background-position:0 -60px; }
+
+.i-sy5 { background-position:0 -85px; }
+
+.i-sy6 { background-position:0 -110px; }
+
+.i-sy7 {
+
+    width:15px; height:16px;
+
+    background-position:0 -135px;
+
+}
+
+.i-sy8, .i-sy8a {
+
+    width:3px; height:3px;
+
+}
+
+.i-sy8 { background-position:0 -160px; }
+
+.i-sy8a { background-position:-10px -160px; }
+
+.i-sy9 {
+
+    width:16px; height:16px;
+
+    background-position:0 -175px;
+
+}
+
+.i-sy10 {
+
+    width:9px; height:5px;
+
+    background-position:0 -200px;
+
+}
+
+.i-sy11 {
+
+    width:16px; height:12px;
+
+    background-position:0 -215px;
+
+}
+
+.i-sy12, .i-sy12a {
+
+    width:5px; height:9px;
+
+}
+
+.i-sy12 { background-position:0 -240px; }
+
+.i-sy12a { background-position:-10px -240px; }
+
+.i-sy13, .i-sy14, .i-sy15 {
+
+    width:7px; height:8px;
+
+}
+
+.i-sy13 { background-position:0 -260px; }
+
+.i-sy14 { background-position:0 -280px; }
+
+.i-sy15 { background-position:0 -300px; }
+
+.i-sy16, .i-sy16a, .i-sy17, .i-sy17a, .i-sy18, .i-sy18a, .i-sy19, .i-sy19a, .i-sy20, .i-sy20a, .i-sy21, .i-sy21a, .i-sy22, .i-sy22a, .i-sy23, .i-sy23a, .i-sy24, .i-sy24a {
+
+    width:32px; height:28px;
+
+}
+
+.i-sy16 { background-position:-40px 0; }
+
+.i-sy16a { background-position:-85px 0; }
+
+.i-sy17 { background-position:-40px -35px; }
+
+.i-sy17a { background-position:-85px -35px; }
+
+.i-sy18 { background-position:-40px -70px; }
+
+.i-sy18a { background-position:-85px -70px; }
+
+.i-sy19 { background-position:-40px -105px; }
+
+.i-sy19a { background-position:-85px -105px; }
+
+.i-sy20 { background-position:-40px -140px; }
+
+.i-sy20a { background-position:-85px -140px; }
+
+.i-sy21 { background-position:-40px -175px; }
+
+.i-sy21a { background-position:-85px -175px; }
+
+.i-sy22 { background-position:-40px -210px; }
+
+.i-sy22a { background-position:-85px -210px; }
+
+.i-sy23 { background-position:-40px -245px; }
+
+.i-sy23a { background-position:-85px -245px; }
+
+.i-sy24 { background-position:-40px -280px; }
+
+.i-sy24a { background-position:-85px -280px; }
+
+.i-sy25, .i-sy26, .i-sy27 {
+
+    width:44px; height:44px;
+
+}
+
+.i-sy25 { background-position:0 -325px; }
+
+.i-sy26 { background-position:-45px -325px; }
+
+.i-sy27 { background-position:-90px -325px; }
+
+.i-sy28 { 
+
+    width:14px; height:14px;
+
+    background-position:-125px 0;
+
+}
+
+.i-sy29 { 
+
+    width:16px; height:16px;
+
+    background-position:-120px -20px;
+
+}
+
+
+
+.w100 { width:100px; }
+
+.w190 { width:190px; }
+
+.w220 { width:220px; }
+
+.w300 { width:300px; }
+
+.w320 { width:320px; }
+
+.w540 { width:745px; }
+
+.w780 { width:780px; }
+
+.f28 { font-size:28px; }
+
+.lh30 { line-height:30px; }
+
+.s-ccc { color:#ccc; }
+
+.s-oe1 { color:#ff8a00; }
+
+.mt2 { margin-top:2px; }
+
+.mt25 { margin-top:25px; }
+
+.mr17 { margin-right:17px; }
+
+.mr45 { margin-right:45px; }
+
+
+
+.hd-menu li .i-sy1 {
+
+    position: absolute; z-index:2;
+
+    bottom: 28px;right: -8px;
+
+}
+
+.ad-hr, .ad-hr img { display:block; }
+
+
+
+/* 按地区查找律师 */
+
+.u-170 li { 
+
+    padding:0;
+
+    margin-bottom:10px;
+
+}
+
+.u-170 .u-pn { width: 168px; margin-left:0; }
+
+.u-170 .pn-more { width: 168px; }
+
+.u-170 .u-fm { width:150px; }
+
+
+
+/* 热门列表 */
+
+.sy-list1 {
+
+    padding-bottom:10px;
+
+    border-bottom:1px solid #eaeaea;
+
+}
+
+.sy-list1 a {
+
+    float:left;
+
+    margin-right:11px;
+
+    line-height:28px;
+
+    color:#666;
+
+    white-space:nowrap;
+
+}
+
+.sy-list1 a:hover { color:#f60; }
+
+
+
+/* 其他功能 */
+
+.sy-list2 li {
+
+    border-bottom:1px solid #eaeaea;
+
+}
+
+.sy-list2 li.borb0 { border-bottom:0; }
+
+.sy-list2 li a {
+
+    display:block;
+
+    padding:16px 5px;
+
+    height:16px; line-height:16px;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+.sy-list2 li a:hover { color:#f60; }
+
+.sy-list2 li a .i-sy12 { margin-top:3px; }
+
+.sy-list2 li a:hover .i-sy12 { background-position:-10px -240px; }
+
+
+
+/* 知名律师  famous-lawyer-list */
+
+.fs-lr-list {
+
+    position: relative;
+
+    float: left;
+
+    width: 100px; height: 100px;
+
+}
+
+.fs-lr-item, .fs-lr-item img {
+
+    display: block;
+
+    width: 100%; height: 100px;   
+
+}
+
+.fs-lr-item { overflow: hidden; }
+
+.fs-lr-item p {
+
+    position: absolute;
+
+    left: 0; bottom: 0;
+
+    width: 100%; height: 20px; 
+
+    text-align: center; color: #fff;
+
+    background: #000;
+
+    background: rgba(0,0,0,.5);
+
+}
+
+.fs-lr-pop {
+
+    position: absolute;
+
+    left: 0; top: 100px;
+
+    width: 300px; height: 180px; padding:15px;
+
+    background-color: #fff;
+
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.1);
+
+       -moz-box-shadow: 0 0 15px rgba(0,0,0,.1);
+
+         -ms-box-shadow: 0 0 15px rgba(0,0,0,.1);
+
+                box-shadow: 0 0 15px rgba(0,0,0,.1);
+
+}
+
+.fs-lr-pr { 
+
+    position: relative;
+
+    float:left;
+
+}
+
+.fs-lr-pr .arrow {
+
+    position: absolute;
+
+    left: 31px; top: -23px;
+
+    border-bottom-color: #fff;
+
+}
+
+.fs-lr-pr .u-btn-sl { padding: 0 12px; margin-top: 21px; }
+
+.fs-lr-pr .u-btn-sl .i-sy28 {
+
+    float: left;
+
+    margin: 8px 5px 0 0; 
+
+}
+
+.fs-lr-pr .fs-lr-infor {
+
+    float: left;
+
+    width: 180px;
+
+    font-size: 14px; color: #666;
+
+}
+
+.fs-lr-pr .fs-lr-infor li {
+
+    height: 24px; line-height: 24px;
+
+    overflow: hidden;
+
+}
+
+.fs-lr-pr .fs-lr-inf {
+
+    height: 44px;line-height: 22px;
+
+    color: #999;
+
+    overflow: hidden;
+
+}
+
+.fs-lr-help li {
+
+    float: left;
+
+    width: 35%; *width:105px;
+
+    text-align: center;
+
+    color: #666;
+
+}
+
+.fs-lr-help li p { color: #333; }
+
+.fs-lr-help li.fs-lr-hp1 { width: 28%; *width:84px; }
+
+.fs-lr-help li.fs-lr-hp1, .fs-lr-help li.fs-lr-hp2 { border-right: 1px solid #eaeaea; }
+
+
+
+/* .sy-list3 */
+
+.sy-list3 img {
+
+    display:block;
+
+    width:100px; height:100px;
+
+}
+
+.sy-list3 .u-btn-sl {
+
+    padding:0; margin-top:2px;
+
+    width:108px; _width:104px;
+
+    text-align:center;
+
+}
+
+
+
+/* title */
+
+.title1 {
+
+    height:24px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.title2 {
+
+    height:37px;
+
+    border-bottom:3px solid #4b93d7;
+
+}
+
+.title3 {
+
+    height:27px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.title4 {
+
+    height:60px; line-height:60px;
+
+    color:#fff; background-color:#47b1f4;
+
+}
+
+.title4 .i-sy11 {
+
+    position:absolute; right:0; top:60px;
+
+}
+
+
+
+/* art-list */
+
+.art-list li {
+
+    height: 28px; line-height: 28px;
+
+    overflow: hidden;
+
+}
+
+.art-list li span { 
+
+    color: #999; 
+
+    margin-left: 10px; 
+
+}
+
+.art-list a .i-sy8 {
+
+    float: left;
+
+    margin: 13px 10px 0 0;
+
+}
+
+.art-list a:hover .i-sy8 { background-position: -10px -160px; }
+
+.art-list-c2 li {
+
+    float: left;
+
+    width: 50%; *width: 49.5%;
+
+}
+
+.art-list-le li {
+
+    height: 30px; line-height:30px;
+
+}
+
+
+
+.art-list-le a .i-sy8 { margin-top: 14px; }
+
+
+
+/* 律师面对面、华律访谈 */
+
+.sy-list4-tab {
+
+    position:relative; left:0; top:0; z-index:1;
+
+}
+
+.sy-list4-tab a {
+
+    position:relative;
+
+    float:left;
+
+    padding:0 15px 4px; _padding-bottom:3px;
+
+    font-size:14px;
+
+}
+
+.sy-list4-tab a .i-sy10 {
+
+    position:absolute; top:20px; left:50%; _top:19px; 
+
+    margin-left:-4px;
+
+    display:none;
+
+}
+
+.sy-list4-tab a:hover { color:#4b93d7; }
+
+.sy-list4-tab a.tab-hover {
+
+    border-bottom:1px solid #4b93d7;
+
+    color:#4b93d7;
+
+}
+
+.sy-list4-tab a.tab-hover .i-sy10 { display:block; }
+
+
+
+.sy-list4 .bq {
+
+    display:inline-block;
+
+    padding:1px 5px;
+
+    height:14px; line-height:14px;
+
+    background-color:#f60; color:#fff;
+
+}
+
+
+
+.box-bor1 { 
+
+    border:1px solid #eaeaea; 
+
+    border-top:0;
+
+}
+
+/* 热门类别 */
+
+.rm-list a {
+
+    float:left;
+
+    padding-top:14px;
+
+    width:62px; height:65px; _width:61px;
+
+    text-align:center;
+
+    border-top:1px solid #f5f5f5; border-right:1px solid #f5f5f5;
+
+}
+
+.rm-list a.borr0 { border-right:0; }
+
+.rm-list a span {
+
+    display:block;
+
+    margin-top:5px;
+
+}
+
+.rm-list a:hover { 
+
+    color:#ffa52a;
+
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+
+}
+
+.rm-list a:hover .i-sy16 { background-position:-85px 0; }
+
+.rm-list a:hover .i-sy17 { background-position:-85px -35px; }
+
+.rm-list a:hover .i-sy18 { background-position:-85px -70px; }
+
+.rm-list a:hover .i-sy19 { background-position:-85px -105px; }
+
+.rm-list a:hover .i-sy20 { background-position:-85px -140px; }
+
+.rm-list a:hover .i-sy21 { background-position:-85px -175px; }
+
+.rm-list a:hover .i-sy22 { background-position:-85px -210px; }
+
+.rm-list a:hover .i-sy23 { background-position:-85px -245px; }
+
+.rm-list a:hover .i-sy24 { background-position:-85px -280px; }
+
+
+
+.plr9 { padding-left:9px; padding-right:9px; }
+
+.s-wb2 {
+
+    width: 410px;
+
+    height: 36px; line-height: 36px;
+
+    border-width: 2px;
+
+}
+
+.btn-oe2 {
+
+    padding: 0; 
+
+    width: 98px;
+
+    height: 40px;line-height: 40px;
+
+    background-color: #ffa52a;
+
+    text-align: center;
+
+}
+
+.btn-oe2:hover { background-color: #fe9607; color: #fff; }
+
+
+
+/* 律师动态 lawyer-dynamic */
+
+.lr-dc-bar {
+
+    height: 344px;
+
+    overflow: hidden;
+
+}
+
+.lr-dc-list {
+
+    height: 86px;
+
+    position: relative;
+
+}
+
+
+
+.lr-dc-line {
+
+    position: relative;
+
+    left: 0; top: 0;
+
+    border-left: 1px solid #ddd;
+
+    margin-left: 3px;
+
+}
+
+.lr-dc-time {
+
+    position: relative;
+
+    left: -4px; top: 0;
+
+    height: 16px;
+
+    background-color: #fff;
+
+}
+
+.lr-dc-time .ico-dot {
+
+    float: left;
+
+    width: 7px; height: 7px; overflow: hidden;
+
+    background-color: #999;
+
+    border-radius: 50%;
+
+    margin: 4px 7px 0 0;
+
+}
+
+.lr-dc-time span {
+
+    position: relative;
+
+    float: left;
+
+    height: 16px; line-height: 16px;
+
+    padding: 0 4px;
+
+    background-color: #999;
+
+    font-size: 12px; color: #fff;
+
+}
+
+.lr-dc-time span .arrow {
+
+    position: absolute;
+
+    left: -7px; top: 4px;
+
+}
+
+.lr-dc-item {
+
+    position: relative;
+
+    height: 40px;
+
+    padding: 15px 0 15px 60px;
+
+}
+
+.lr-dc-item p {
+
+    float: right;
+
+    height: 40px; overflow: hidden;
+
+    color: #666;
+
+}
+
+.lr-dc-item .lr-dc-img {
+
+    position: absolute;
+
+    left: 10px; top: 15px;
+
+    width: 40px; height: 40px;
+
+}
+
+.lr-dc-item .lr-dc-img img {
+
+    display: block;
+
+    width: 100%; height: 100%;
+
+}
+
+
+
+/* sy-list5 */
+
+.sy-list5 dt {
+
+    padding:11px 0;
+
+    height:20px;
+
+    overflow:hidden;
+
+}
+
+.sy-list5 dd {
+
+    padding:10px 0;
+
+    border-top:1px dotted #eaeaea;
+
+}
+
+.sy-list5 dd.bors { border-top-style:solid; }
+
+
+
+.u-260 .u-btn {
+
+    width:200px;
+
+    text-align:center;
+
+}
+
+
+
+/* 解决方案、法律知识切换框 control-tab */
+
+.control-tab {
+
+    
+
+}
+
+    /**/
+
+.cl-tab-tit {
+
+    float: left;
+
+    width: 190px;
+
+}
+
+.cl-tab-tit span {
+
+    display: block;
+
+    height: 42px; line-height: 42px;
+
+    padding: 0 19px;
+
+    border: 1px solid #eaeaea; border-top: 0;
+
+    font-size: 14px; cursor: pointer;
+
+}
+
+.cl-tab-tit span .i-sy12 {
+
+    float: right;
+
+    margin-top: 17px; 
+
+}
+
+.cl-tab-tit span.cl-tab-click {
+
+    border-left: 3px solid #f60;
+
+    border-right: none;
+
+    padding-left: 17px;
+
+    font-weight: bold; color: #f60;
+
+}
+
+.cl-tab-tit span.cl-tab-click .i-sy12 { background-position: -10px -240px; }
+
+    /**/
+
+.cl-tab-nr {
+
+    float: left;
+
+    width: 990px;
+
+    padding: 20px 0 0 20px;
+
+}
+
+.step-bg {
+
+    height: 30px; line-height: 30px;
+
+    background: url(../images/step-bg.png) no-repeat;
+
+}
+
+.step-bg span {
+
+    float: left;
+
+    width: 114px;
+
+    padding-left: 20px;
+
+    color: #666;
+
+}
+
+.step-bg span em { color: #f60; margin-right: 5px; }
+
+
+
+/* */
+
+.u-220 li { 
+
+    padding:0;
+
+    margin-bottom:10px;
+
+}
+
+.u-220 .u-pn { width: 218px; margin-left:0; }
+
+.u-220 .pn-more { width: 218px; }
+
+.bort1 { border-top:1px solid #eaeaea; }
+
+
+
+/* sy-list6 */
+
+.sy-list6 li { width:110px; }
+
+.sy-list6 li img {
+
+    display:block;
+
+    width:110px; height:110px;
+
+}
+
+.sy-list6 li .u-btn-sl {
+
+    padding:0;
+
+    width:108px;
+
+}
+
+.sy-list6 li p.mt10 { height:20px; overflow:hidden; }
+
+.sy-list6 li p.lh24 { height:24px; overflow:hidden; }
+
+
+
+/* table */
+
+.cl-tab-item table, .cl-tab-item table tr, .cl-tab-item table td {
+
+    border:1px solid #fff ;
+
+}
+
+.cl-tab-item table td {
+
+    width:20%; height:40px; line-height:40px;
+
+    text-align:center;
+
+    background-color:#f5f5f5;
+
+    overflow:hidden;
+
+}
+
+.cl-tab-item table td a {
+
+    display:block;
+
+     height:40px; line-height:40px;
+
+    font-size:14px;
+
+    color:#666;
+
+    overflow:hidden;
+
+}
+
+.cl-tab-item table td a:hover {
+
+    background-color:#88bfee;
+
+    color:#fff;
+
+}
+
+
+
+/* sy-list7 */
+
+.sy-list7 li {
+
+    margin-top:10px;
+
+    height:22px; line-height:22px;
+
+    overflow:hidden;
+
+}
+
+.rank {
+
+    float:left;
+
+    margin-top:3px;
+
+    width:16px; height:16px; line-height:16px;
+
+    text-align:center;
+
+    color:#fff; background-color:#ccc;
+
+}
+
+.rank1 { background-color:#e52a2a; }
+
+.rank2 { background-color:#ff6600; }
+
+.rank3 { background-color:#4b93d7; }
+
+
+
+.sy-list7 .i-sy13, .sy-list7 .i-sy14, .sy-list7 .i-sy15 { margin-top:7px; }

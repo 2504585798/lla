@@ -1,0 +1,281 @@
+ /* CSS Document */
+
+
+
+/* =================== 主控制 ================== */
+
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,hr,
+
+fieldset,input,p,blockquote,th,td {margin:0px; padding:0px;}
+
+/*table {border-collapse:collapse;border-spacing:0;}*/
+
+fieldset,img {border:none;}
+
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+
+ol,ul {list-style:none; margin:0; }
+
+li{ list-style:none;}
+
+li .li{ list-style:broken line;   cursor:pointer;}
+
+caption,th {text-align:left;}
+
+img a {border: none;}
+
+a{ color:#222; text-decoration:none;  cursor:pointer;}
+
+a:hover{ color:#258;   cursor:pointer; }
+
+#sty img{margin:0px}
+
+
+
+/* =================== 公共部分=================== */
+
+body { line-height: 1.25em; color:#000; width: 100%; height:100%; font-family:"Microsoft YaHei"; }
+
+select, input{font: 13px normal Arial; }
+
+html, html>body {   margin:0;}
+
+#clear {height: 1px;line-height: 1px;font-size: 1px;clear: both;margin-top:-1px; display:block;}
+
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+
+.clearfix{*zoom:1;}
+
+
+
+
+
+
+
+
+
+
+
+/* =================== top ================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cityList */
+
+.cityList{display:none; width:676px;border:2px solid #258;background:white; position:absolute; z-index:9999; top:30px;left:0;font-family:arial,"宋体";overflow:hidden; text-indent:0;   font-size:12px;}
+
+.cityList .title{background-color:#F4F4F4;width:100%;padding-top:10px;padding-left:16px;overflow:hidden; }
+
+.cityList .cityTopSearch{float:left;width:228px;height:25px;line-height:25px;margin-right:38px;padding:0 2px;display:inline;border:1px solid #E6DFDE;color:#5e5e5e;}
+
+.cityList ul.titleChar{list-style:none;cursor:default;}
+
+.cityList .titleChar .on1{border-color:#E6DFDE;background-color:white;}
+
+.cityList .titleChar li{float:left;border:1px solid #F4F4F4;border-bottom:0;padding:0 24px 0 24px; }
+
+.cityList .cityListBox{margin:8px 0 0 16px; color:#258; overflow:hidden;display:inline-block; }
+
+.cityListBox dl{ overflow:hidden;zoom:1;}
+
+cityListBox .hotCity dd{width:650px;}
+
+.cityListBox dl dt{float:left;width:20px;height:auto;display:block;line-height:25px;}
+
+.cityListBox dl dd{float:left;line-height:25px;_padding-top:2px;text-align:left;width:640px;margin-bottom:6px;}
+
+.cityListBox dl dd a{ color:#666;}
+
+.cityListBox dl dd a:hover{ color:#258;text-decoration:underline;}
+
+.cityListBox a{width:55px;display:inline-block;}
+
+.none{display:none;}
+
+/* =================== menu================== */
+
+.menu{ width:99.9%; height:44px;background:url(../images/menubg.jpg); border-bottom:0;}
+
+
+
+/*.menubox{ width:1199px; margin:0 auto; height:42px; overflow:hidden;  font-size:14px;  font-family:"宋体"; color:#fff;}
+
+.menubox li{ padding:0px 12px 0px 12px; overflow:hidden; float:left; height:41px; line-height:42px; text-align:center;  background:url(../images/menulibg.jpg) right center no-repeat; display:block; }*/
+
+.menubox{ width:1199px; margin:0 auto; height:42px; overflow:hidden;  font-size:14px;  font-family:"宋体"; color:#fff;}
+
+.menubox li{ padding:0px 12px 0px 12px; overflow:hidden; float:left; height:41px; line-height:42px; text-align:center;  background:url(../images/menulibg.jpg) right center no-repeat; display:block; }
+
+
+
+.menubox li a{ color:#fff;}
+
+.menubox li.on{ background:#125187;color:#fff; }
+
+.menubox li.on a{ color:#FFF;}
+
+
+
+/*
+
+.menubox li a{ color:#fff;}
+
+.menubox li.on{ background:#125187;color:#fff; }
+
+.menubox li.on a{ color:#FFF;}*/
+
+
+
+
+
+/* =================== logo ================== */
+
+
+
+/* =================== logo_right ================== */
+
+.logo_right{ float:right; height:80px;width:790px; }
+
+.search{ width:500px; height:32px; float:left; margin-top:35px; line-height:32px; text-align:left; text-indent:10px;color:#222;}
+
+.search_subnav{ float:left; position:relative;}
+
+.search_left{ width:100px; height:30px;overflow:hidden;border:1px solid #e7e7e7;   background:url(../images/sxan.png) no-repeat 80px center; cursor:pointer; color:#222; }
+
+.subnav {list-style: none;display: none;width: 100px; border: 1px solid #e7e7e7; border-top:0 none; position:absolute; z-index:500; left:0px; background:#FFFFFF;}
+
+.subnav li{margin: 0; padding: 0;width: 100px; cursor:pointer; }
+
+
+
+
+
+.search_shuru { float:left; width:315px; height:30px;    border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; border-left:none; border-right:none; background:url(../images/sousuo.jpg) no-repeat; line-height:30px;  color:#888; text-indent:30px;}
+
+.search_anniu{ width:78px; height:32px; background:#ff853f; color:#ffffff; font-family:"Microsoft YaHei"; font-size:18px; float:left; border:none; }
+
+
+
+/* =================== logo_right_zixun ================== */
+
+.flwt{ height:80px; width:240px; border0:1px solid #000; float:right; }
+
+.flwt_top{ width:240px; height:33px; text-align:right; line-height:33px;  padding-top:5px;}
+
+.flwt_bottom{ width:240px; height:32px; padding-left:21px;  text-align:center; line-height:29px; color:#258; font-size:13px;}
+
+.flwt_zixun1{ float:left; width:100px; height:30px; background:url(../images/zixun.jpg)  no-repeat; padding-top:3px;}
+
+.flwt_zixun2{ float:left; width:100px; height:30px; background:url(../images/zixun.jpg)  no-repeat; padding-top:3px; margin-left:18px;}
+
+.flwt_bottom a{color:#258;}
+
+
+
+/* =================== 导航 ================== */
+
+.daohang { width:100%; height:70px; background:url(../images/daohang.jpg) repeat-x;}
+
+.daohang_M{ width:1222px; margin:0 auto; height:70px;  }
+
+.daohang_L{ float:left; background:url(../images/ZUO.jpg) no-repeat; height:70px; width:11px;  /*position:relative; right:10px;*/  }
+
+.daohang_R{ float:right; background:url(../images/you.jpg) no-repeat; height:70px; width:11px; /*position:relative; left:11px;*/  }
+
+.daohangbig{ float:left; width:1200px; height:60px; margin:0 auto; padding-top:10px;  background:url(../images/bn.jpg) no-repeat;}
+
+/* =================== 导航-内容 ================== */
+
+.wzsy { display:block; float:left; width:60px; padding-left:20px; height:60px; color:#fff;font-size:16px;line-height:25px; font-weight:bold; }
+
+.wzsy:hover{ color:#F4FECC; text-decoration:none;}
+
+
+
+
+
+.xianzuo{ width:15px; height:60px; float:left;}
+
+
+
+.zixun01{ float:left; width:205px; height:52px; border-right:1px dashed #0d4b8b; }
+
+.zixun_c01{ width:170px; height:52px;  padding-left:10px; padding-right:15px;}
+
+.zixun_c01 img{ float:left;}
+
+.zixun_zi01{ float:left; width:140px; height:52px; text-align:right; font-size:14px; color:#ffffff; line-height:26px; overflow:hidden;}
+
+.zixun_zi01 li{ float:left; width:70px;  height:26px;overflow:hidden; }
+
+.zixun_zi01 a{ color:#ffffff;}
+
+.zixun_zi01 a:hover{ color:#F4FECC;}
+
+
+
+.zixun{ float:left; width:205px; height:52px; border-right:1px dashed #0d4b8b; }
+
+.zixun_c{ width:170px; height:52px;  padding-left:15px; padding-right:15px;}
+
+.zixun_c img{ float:left;}
+
+.zixun_zi{ float:left; width:140px; height:52px; text-align:right; font-size:14px; color:#ffffff; line-height:26px; overflow:hidden;}
+
+.zixun_zi li{ float:left; width:70px;  height:26px;overflow:hidden; }
+
+.zixun_zi a{ color:#ffffff;}
+
+.zixun_zi a:hover{ color:#F4FECC;}
+
+
+
+.lvshi{ width:275px; height:52px;  float:left;  border-right:1px dashed #0d4b8b; border-left:1px dashed #2c96e5; }
+
+.lvshi_c{ width:245px; height:52px;   padding-left:15px; padding-right:15px;}
+
+.lvshi_c img{ float:left;}
+
+.lvshi_zi{ float:left; width:215px; height:52px; text-align:right; font-size:14px; color:#ffffff; line-height:26px;}
+
+.lvshi_zi li{ float:left; width:70px;  height:26px;}
+
+.lvshi_zi a{ color:#ffffff;}
+
+.lvshi_zi a:hover{ color:#F4FECC;}
+
+
+
+.zonghe{ width:205px; height:52px;  float:left;  border-right:1px dashed #0d4b8b; border-left:1px dashed #2c96e5; }
+
+.zonghe_c{ width:170px; height:52px;   padding-left:15px; padding-right:15px;}
+
+.zonghe_c img{ float:left;}
+
+.zonghe_zi{ float:left; width:140px; height:52px; text-align:right; font-size:14px; color:#ffffff; line-height:26px;}
+
+.zonghe_zi li{ float:left; width:70px;  height:26px;  }
+
+.zonghe_zi a{ color:#ffffff;}
+
+.zonghe_zi a:hover{ color:#F4FECC;}
+
+
+
+
+

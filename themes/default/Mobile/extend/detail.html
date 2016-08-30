@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+<title>推广员</title>
+<link rel="stylesheet" type="text/css" href="__TMPL__statics/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="__TMPL__statics/css/css_1.css"/>
+<link rel="stylesheet" type="text/css" href="__TMPL__statics/css/css_2.css"/>
+<script src="__TMPL__statics/js/zepto.js" type="text/javascript" charset="utf-8"></script>
+<script src="__TMPL__statics/js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="__TMPL__statics/js/baocms.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<header>
+		<a class="back" href="<{:U('extend/index')}>"><i class="icon-goback"></i></a>
+		<div class="title">推广详情</div>
+		<i class="icon-menu"></i>
+	</header>
+	<div class="bdcolor">
+        <div class="bdcolor_bg"></div>
+        <div class="bdsharebuttonbox" data-tag="share_1">
+            <a class="bds_weixin" data-cmd="weixin">微信</a>
+            <a class="bds_qzone" data-cmd="qzone" href="#">QQ空间</a>
+            <a class="bds_sqq" data-cmd="sqq">腾讯QQ</a>
+            <a class="bds_tqq" data-cmd="tqq">腾讯微博</a>
+            <a class="bds_tsina" data-cmd="tsina">新浪微博</a>
+            <div class="bd-share-popup-footer">
+                <a class="bd-share-popup-close" onclick="$('.bdcolor').hide();" href="javascript:void(0);">取消</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("._share").click(function () {
+                $(".bdcolor").show();
+            });
+        });
+        window._bd_share_config = {
+            common: {
+                bdText: '<{$detail.title}>',
+                bdDesc: '<{$detail.title}>',
+                bdUrl: encodeURIComponent(location.href),
+                bdPic: 'http://<{$Think.SERVER.HTTP_HOST}>__ROOT__/attachs/<{$detail.photo|default='default.jpg'}>'
+            },
+            share: [{
+                "bdSize": 32,
+            }],
+        }
+        with (document)
+            0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+   	<div id="sell" class="page-center-box">
+		<div id="scroll">
+			<!-- BANNER图 -->
+			<div class="seat-banner">
+				<img src="__ROOT__/attachs/<{$detail['photo']}>" width="100%" height="100%"/>
+				<div class="shade"></div>
+				<div class="shade-content">
+					<p><{:bao_msubstr($detail['title'],0,25,false)}></p>
+				</div>
+			</div>
+			<!-- 评分 -->
+			<div class="point">
+				<div class="point-left ">
+					<div class=" spread-price">价格：￥<{:round($detail['mall_price']/100,2)}> <span>返佣：￥5</span></div>
+				</div>
+				<div class="point-right">
+					<a  class="btn _share" id='share2'> 立即分享</a>
+				</div>
+				
+			</div>
+			
+			
+			<div class="point">
+				<div class="brn spread-left">
+					<img src="__TMPL__statics/img/tp4.png" class="left"><span class="left">转发奖励：返现<span class="spread-price2">￥<{:round($detail['commission']/100,2)}></span></span>
+				</div>
+				<div class="point-right">
+					<span class="spread-zhuan"><{$detail.share}>人已转发</span>
+				</div>
+			</div>
+			<div class="spread-intro">
+				<ul>
+					<li class="spread-tui">推广详情</li>
+					<li><{$detail.details}></li> 
+				</ul>
+			</div>
+		</div>
+	</div>
+<include file="public:footer"/>

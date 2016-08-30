@@ -1,0 +1,16 @@
+<volist name="list" id="item" key="index ">
+<li class="line">
+	<a href="<{:U('mart/detail',array('goods_id'=>$item['goods_id'],'shop_id'=>$item['shop_id']))}>">
+		<div class="x4">
+			<img src="__ROOT__/attachs/<{$item.photo}>">
+		</div>
+		<div class="x8">
+			<h5><{$item['title']}></h5>
+			<p class="price"><span>&yen;<{:round($item['mall_price']/100,2)}></span>  <del>&yen;<{:round($item['price']/100,2)}></del></p>
+		</div>
+	</a>
+	<a href="<{:U('mart/cartadd',array('goods_id'=>$item['goods_id'],'shop_id'=>$item['shop_id']))}>" class="item-addcart">
+		<div class="txt txt-small radius bg-yellow"><i class="icon-plus"></i></div>
+	</a>
+</li>
+</volist>

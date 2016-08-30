@@ -1,0 +1,59 @@
+<include  file='public:header'/>    
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('mart/main')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			同城微店
+		</div>
+	</header>
+
+	<div class="line">
+		<div class="x3">
+			<ul id="cate-cate" class="cate-cate">
+			<foreach name="shopcates" item="var">
+			<eq name="var.parent_id" value="0"> 
+				<li><a rel="<{$var.cate_id}>" href="javascript:;"><{$var.cate_name}></a></li>	
+			</eq>
+			</foreach>
+			</ul>
+		</div>
+		<div class="x9">
+			<ul id="now-cate" class="now-cate">
+			<php>$i=0;</php>
+			<foreach name="shopcates" item="var">
+				<if condition="$var['parent_id'] neq 0">
+				<php>$i++;</php>
+				<if condition="$i elt 9">
+				<li>
+					<a href="<{:U('mart/index',array('cat'=>$var['cate_id']))}>">
+						<img src="/static/default/wap/image/mart/cat-<{$var['cate_id']}>.png">
+						<p><{$var.cate_name}></p>
+					</a>
+				</li>
+				</if>
+				</if>
+			</foreach>
+			</ul>
+		</div>
+	</div>
+
+	<div class="mall-cart">
+		<a href="<{:U('mart/cart')}>">
+		<div class="round radius-circle bg-green"><div class="badge-corner"><i class="icon-shopping-cart"></i><span class="badge bg-red"><{$cartnum}></span></div></div>
+		</a>
+	</div>
+	
+	<script>
+	$("#cate-cate a").click(function(){
+		var cateid = $(this).attr("rel");
+		  $("#cate-cate a").each(function(){
+			$(this).removeClass("active");
+		  });
+		$(this).addClass("active");
+		$("#now-cate").html("");
+		loaddata('/mobile/mart/cateload/cat/'+cateid+'.html', $("#now-cate"));
+	});
+	
+	</script>
+<include file='public:footer'/>   

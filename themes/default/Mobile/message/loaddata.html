@@ -1,0 +1,17 @@
+	<foreach name="list" item="item">
+	<li class="line">
+		<a href="<{:U('message/detail',array('msg_id'=>$item['msg_id']))}>">
+		<div class="x2 item-left">
+			<span class="time"><{$item.create_time|date='m/d',###}></span>
+			<img class="tline" src="/static/default/wap/image/message/msg-tline.png" />
+		</div>
+		<div class="x10 item-right">
+			<p class="send"><if condition="$item[send_id] eq 0"><i class="icon-exclamation-circle text-dot"></i>系统信息<else /><i class="icon-user text-gray"></i>  <{$users[$item[send_id]][nickname]}></if></p>
+			<p class="desc"><{$item.content}></p>
+			<span class="status">
+				<if condition="$item[read_time] elt 100"><em class="text-green">未读</em><else /><em class="text-gray">已读</em></if>
+			</span>
+		</div>
+		</a>
+	</li>
+	</foreach>

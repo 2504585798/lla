@@ -1,0 +1,23 @@
+<foreach name="list" item="var">
+	<li class="item">	
+		<div class="item-title">	
+			<span class="float-left"><{$users[$var['user_id']]['nickname']}></span>	
+			<span class="float-right"><{$var.create_time|date='Y-m-d',###}></span>	
+		</div>	
+		<span class="item-con">	
+			<{$var.contents}>
+		</span>
+		<div class="item-pic">
+		<volist name="pics" id="pic" key="index">
+			<eq name="pic.dianping_id" value="$var['dianping_id']">
+			<img  src="__ROOT__/attachs/<{$pic.pic|default='default.jpg'}>" />
+			</eq>
+		</volist>
+		</div>
+		<if condition="!empty($var['reply'])">
+		<div class="line margin-top text-gray text-small">
+			<span class="tag bg-dot margin-right text-small">卖家回复</span><{$var.reply}>
+		</div>
+		</if>
+	</li>
+</foreach>

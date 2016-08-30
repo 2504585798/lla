@@ -1,0 +1,48 @@
+<foreach name='list' item='item'>
+<li>
+	<div class="line padding">
+		<div class="x3">
+			<a href="<{:U('hdmobile/detail',array('huodong_id'=>$item['huodong_id']))}>">
+				<img src="__ROOT__/attachs/<{$item.photo}>"/>
+			</a>
+		</div>
+		<div class="x9">
+			<h5>
+				<volist name="getHuoCate" id="var" key="index">
+					<eq name="item.cate_id" value="$index">[<{$var}>]</eq>
+				</volist><{:bao_Msubstr($item['title'],0,5,false)}>
+			</h5>
+			<p>时间：<{$item.time}></p>
+			<p>地点：<{:bao_Msubstr($item['addr'],0,7,false)}></p>
+		</div>
+	</div>
+	<div class="line info">
+		<span class="x10">
+			<em class="margin-right">人数：<{$item.sign_num}>人报名</em>
+			<em>性别：
+			<if condition="($item['sex'] eq 3) OR ($item['sex'] eq '')">
+				<i class="icon-venus-mars"></i>
+			</if>
+			<if condition="$item['sex'] eq 1">
+				<i class="icon-venus"></i>
+			</if>
+			<if condition="$item['sex'] eq 2">
+				<i class="icon-mars"></i>
+			</if>
+			</em>
+		</span>
+		<span class="x2">
+				<if condition="$item['sign'] eq 1">
+				<a href="javascript:void(0);">
+					<div class="sign-up sign-up-yi">已报名</div>
+				</a>
+				<else/>
+				<a href="<{:U('hdmobile/sign',array('huodong_id'=>$item['huodong_id']))}>"><div class="sign-up">报名</div>
+				</a>
+			</if>
+		</span>
+	</div>
+	<div class="blank-10 bg"></div>
+</li>
+</foreach>
+

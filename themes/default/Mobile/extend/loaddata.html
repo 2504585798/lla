@@ -1,0 +1,14 @@
+<foreach name="list" item="item">
+   <div class="list-box">
+					<div class="list-img">
+						 <a href="<{:U('extend/detail',array('goods_id'=>$item['goods_id']))}>"><img src="__ROOT__/attachs/<{$item.photo|default='default.jpg'}>"></a>
+					</div>
+					<div class="list-content">
+						<p><{:bao_msubstr($item['title'],0,10,false)}></p>
+						<p><span class="spread-money">￥<{:round($item['mall_price']/100,2)}></span><span>返佣：￥<{:round($item['commission']/100,2)}></span></p>
+						<p class="spread-for"><{$item.share}>人已转发</p>
+						<a href="<{:U('extend/detail',array('goods_id'=>$item['goods_id']))}>" class="button">我要推广</a> 
+					</div>
+				</div>
+				<!-- 循环 -->
+</foreach>

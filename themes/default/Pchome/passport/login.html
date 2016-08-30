@@ -1,0 +1,66 @@
+<include file="public:header" /> 
+<include file="public:topOne"/>
+	<div class="main">
+		<div class="loginBox">
+			<form id="login_frm"  action="<{:U('passport/login')}>" method="post" target="baocms_frm">
+				<div class="loginMid">
+				<h1>
+					<if condition="!empty($CONFIG['site']['logo'])"><a href="<{:U('index/index')}>"><img src="__ROOT__/attachs/<{$CONFIG.site.logo}>" /></a>
+						<else/>
+						<a href="<{:U('index/index')}>"><img src="__PUBLIC__/img/logo.png" /></a></if>
+				</h1>
+				<div class="loginMidNr">
+				<p class="loginMidP">欢迎登录<{$CONFIG['site']['sitename']}>！</p>
+				<table cellpadding="0" cellspacing="0" width="100%" class="loginTable">
+					<tr>
+						<td>
+							<input type="text" name="account" placeholder="邮箱/手机号"    class="loginInput" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="password" name="password"  class="loginInput2" placeholder="密码" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input  class="loginInput2 loginInput4" name="yzm"  type="text"  value="" placeholder="验证码" />
+							<img id="bao_img_code" src="__ROOT__/index.php?g=app&m=verify&a=index&mt=<{:time()}>" /><em><a rel="bao_img_code" class="yzm_code" href="javascript:void(0);">换一张</a></em></td>
+					</tr>
+					<tr>
+						<td class="agreen"><a href="<{:U('passport/forget')}>">忘记密码</a></td>
+					</tr>
+					<tr>
+						<input type="hidden" name="backurl" value="<{$backurl}>" />
+						<td>
+							<input type="submit" class="loginBtn" value="登 陆" />
+						</td>
+					</tr>
+					<tr>
+						<td><a href="<{:U('passport/register')}>" class="loginBtn loginBtnA">注 册</a></td>
+					</tr>
+				</table>
+			</form>
+			<ul class="qqlink">
+				<li class="qqlink_wz">其他账号登录：</li>
+				<li><a href="<{:U('passport/qqlogin')}>"></a></li>
+				<li class="li2"><a href="<{:U('passport/wxlogin')}>"></a></li>
+				<li class="li3"><a href="<{:U('passport/wblogin')}>"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="loginR"> <img src="__PUBLIC__/img/r_03.png" />
+		<div class="login_wx">
+			<ul>
+				<li class="login_wxLi"> <img src="__PUBLIC__/img/bwx_03.png" />
+					<p>扫描下载客户端</p>
+				</li>
+				<li class="login_wxLi"> <img src="__PUBLIC__/img/bwx_03.png" />
+					<p>扫描关注官网微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<include file="public:footer"/> 

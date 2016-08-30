@@ -1,0 +1,781 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <meta name="applicable-device" content="pc" />
+    <title>404您访问的页面不存在-大律师网</title>
+    <meta name="keywords" content=" 法律咨询-在线律师咨询-法规-大律师网" />
+    <meta name="description" />
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/user.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <link rel="alternate" type="text/css" />
+
+    
+    <link type="text/css" rel="stylesheet" href="/style/about.css" />
+    <link type="text/css" rel="stylesheet" href="/style/404_2.css" />
+
+</head>
+
+<body>
+   
+        <!--top-->
+<div class="top">
+    <div class="topz">
+
+        <div class="top_left" style="width:680px;">
+            <div class="top_leftz">
+                
+<span id="loccity">
+</span>
+<script>
+    $.get("/home/jsondata", function (data) {
+        if (data.city != "")
+        { $("#loccity").html("<a href='/" + data.citypy + "'>" + data.city + "</a>") }
+    })
+</script>
+<div class="dw">
+    <div class="top_leftya"><a href="javascript:;">[进入城市]</a></div>
+    <div style="display: none;" class="cityList">
+        <div class="title">
+            <ul class="titleChar">
+                <li class="on1">热门</li>
+                <li class="">A~G</li>
+                <li class="">H~L</li>
+                <li class="">M~T</li>
+                <li class="">U~Z</li>
+            </ul>
+        </div>
+
+        <div class="cityListBox">
+            <dl style="display: block;" class="hotCity">
+                <dd>
+                    <a href="/chongqing">重庆</a><a href="/tianjin">天津</a><a href="/shanghai">上海</a><a href="/beijing">北京</a><a href="/shijiazhuang">石家庄</a><a href="/tangshan">唐山</a><a href="/shenyang">沈阳</a><a href="/dalian">大连</a><a href="/changchun">长春</a><a href="/harbin">哈尔滨</a><a href="/daqing">大庆</a><a href="/nanjing">南京</a><a href="/wuxi">无锡</a><a href="/xuzhou">徐州</a><a href="/changzhou">常州</a><a href="/suzhou">苏州</a><a href="/nantong">南通</a><a href="/hangzhou">杭州</a><a href="/ningbo">宁波</a><a href="/wenzhou">温州</a><a href="/shaoxing">绍兴</a><a href="/taizhou">台州</a><a href="/hefei">合肥</a><a href="/fuzhou">福州</a><a href="/xiamen">厦门</a><a href="/quanzhou">泉州</a><a href="/nanchang">南昌</a><a href="/jinan">济南</a><a href="/qingdao">青岛</a><a href="/yantai">烟台</a><a href="/zhengzhou">郑州</a><a href="/wuhan">武汉</a><a href="/changsha">长沙</a><a href="/guanzhou">广州</a><a href="/shenzhen">深圳</a><a href="/zhuhai">珠海</a><a href="/shantou">汕头</a><a href="/foshan">佛山</a><a href="/dongguan">东莞</a><a href="/nanning">南宁</a><a href="/chengdu">成都</a><a href="/kunming">昆明</a><a href="/xian">西安</a>
+                </dd>
+            </dl>
+            <dl style="display: none;" class="none">
+
+                <dt>A</dt>
+                <dd>
+                    <a href="/alar">阿拉尔</a><a href="/alashan">阿拉善盟</a><a href="/anshan">鞍山</a><a href="/anqing">安庆</a><a href="/ahsz">宿州</a><a href="/anyang">安阳</a><a href="/abazangzu">阿坝藏族</a><a href="/anshun">安顺</a><a href="/ali">阿里</a><a href="/ankang">安康</a><a href="/akesu">阿克苏</a><a href="/altay">阿勒泰</a>
+                </dd>
+                <dt>B</dt>
+                <dd>
+                    <a href="/beijing">北京</a><a href="/beijingdc">东城区</a><a href="/beijingxc">西城区</a><a href="/beijingcy">朝阳区</a><a href="/beijingft">丰台区</a><a href="/beijingsjs">石景山区</a><a href="/bjtongzhou">通州区</a><a href="/beichen">北辰区</a><a href="/baodi">宝坻区</a><a href="/baoshanqu">宝山区</a><a href="/baisha">白沙</a><a href="/baoting">保亭</a><a href="/beibei">北碚区</a><a href="/banan">巴南区</a><a href="/bishan">璧山</a><a href="/baoding">保定</a><a href="/baotou">包头</a><a href="/bayannaoer">巴彦淖尔</a><a href="/benxi">本溪</a><a href="/baisan">白山</a><a href="/baicheng">白城</a><a href="/bengbu">蚌埠</a><a href="/bozhou">亳州</a><a href="/binzhou">滨州</a><a href="/beihai">北海</a><a href="/baise">百色</a><a href="/bazhong">巴中</a><a href="/bijie">毕节</a><a href="/baoshan">保山</a><a href="/baoji">宝鸡</a><a href="/baiyin">白银</a><a href="/bortala">博尔塔拉</a><a href="/bayingolin">巴音郭楞</a>
+                </dd>
+                <dt>C</dt>
+                <dd>
+                    <a href="/chongqing">重庆</a><a href="/changchun">长春</a><a href="/changzhou">常州</a><a href="/changsha">长沙</a><a href="/chengdu">成都</a><a href="/chuxiong">楚雄</a><a href="/changdu">昌都</a><a href="/changji">昌吉</a><a href="/changde">常德</a><a href="/chenzhou">郴州</a><a href="/chaozhou">潮州</a><a href="/chongzuo">崇左</a><a href="/chuzhou">滁州</a><a href="/chaohu">巢湖</a><a href="/chizhou">池州</a><a href="/cangping">昌平区</a><a href="/changningqu">长宁区</a><a href="/chongming">崇明</a><a href="/chengmai">澄迈</a><a href="/changjiang">昌江</a><a href="/cqnanan">南岸区</a><a href="/cqqianjiang">黔江区</a><a href="/changshou">长寿区</a><a href="/chengkou">城口</a><a href="/cqwx">巫溪</a><a href="/chengde">承德</a><a href="/cangzhou">沧州</a><a href="/changzhi">长治</a><a href="/chifeng">赤峰</a>
+                </dd>
+                <dt>D</dt>
+                <dd>
+                    <a href="/daqing">大庆</a><a href="/dongguan">东莞</a><a href="/dalian">大连</a><a href="/dandong">丹东</a><a href="/deyang">德阳</a><a href="/dazhou">达州</a><a href="/dali">大理</a><a href="/dehong">德宏</a><a href="/diqing">迪庆</a><a href="/dingxi">定西</a><a href="/daxinganling">大兴安岭</a><a href="/dongying">东营</a><a href="/dezhou">德州</a><a href="/daxing">大兴区</a><a href="/dagang">大港区</a><a href="/danzhou">儋州</a><a href="/dongfang">东方</a><a href="/dingan">定安</a><a href="/dadukou">大渡口区</a><a href="/dazu">大足</a><a href="/dianjiang">垫江</a><a href="/datong">大同</a>
+                </dd>
+                <dt>E</dt>
+                <dd>
+                    <a href="/ezhou">鄂州</a><a href="/enshi">恩施</a>
+                </dd>
+                <dt>F</dt>
+                <dd>
+                    <a href="/fuzhou">福州</a><a href="/foshan">佛山</a><a href="/fangchenggang">防城港</a><a href="/fangshan">房山区</a><a href="/fuling">涪陵区</a><a href="/fengdu">丰都</a><a href="/fengjie">奉节</a><a href="/fushun">抚顺</a><a href="/fuxin">阜新</a><a href="/fuyang">阜阳</a>
+                </dd>
+                <dt>G</dt>
+                <dd>
+                    <a href="/guanzhou">广州</a><a href="/guilin">桂林</a><a href="/guigang">贵港</a><a href="/guangyuan">广元</a><a href="/guanan">广安</a><a href="/ganzi">甘孜</a><a href="/guiyang">贵阳</a><a href="/gannan">甘南</a><a href="/guoluo">果洛</a><a href="/guyuan">固原</a><a href="/ganzhou">赣州</a>
+                </dd>
+            </dl>   <dl style="display: none;" class="none">
+                <dt>H</dt>
+                <dd>
+                    <a href="/hefei">合肥</a><a href="/harbin">哈尔滨</a><a href="/hangzhou">杭州</a><a href="/huzhou">湖州</a><a href="/hegang">鹤岗</a><a href="/heihe">黑河</a><a href="/huaian">淮安</a><a href="/haidian">海淀区</a><a href="/huairou">怀柔区</a><a href="/heping">和平区</a><a href="/hedong">河东区</a><a href="/hexi">河西区</a><a href="/hongqiao">红桥区</a><a href="/hangu">汉沽区</a><a href="/huangpu">黄浦区</a><a href="/hongkou">虹口区</a><a href="/hechuan">合川</a><a href="/handan">邯郸</a><a href="/hengshui">衡水</a><a href="/hohhot">呼和浩特</a><a href="/hulunbeier">呼伦贝尔</a><a href="/huludao">葫芦岛</a><a href="/huainan">淮南</a><a href="/huaibei">淮北</a><a href="/huangshan">黄山</a><a href="/heze">菏泽</a><a href="/hebi">鹤壁</a><a href="/huanggang">黄冈</a><a href="/hengyang">衡阳</a><a href="/huaihua">怀化</a><a href="/huizhou">惠州</a><a href="/heyuan">河源</a><a href="/hezhou">贺州</a><a href="/hechi">河池</a><a href="/haikou">海口</a><a href="/honghe">红河</a><a href="/hanzhong">汉中</a><a href="/haidong">海东</a><a href="/haibei">海北</a><a href="/huangnan">黄南</a><a href="/hainan">海南</a><a href="/haixi">海西</a><a href="/hami">哈密</a><a href="/hetian">和田</a>
+                </dd>
+                <dt>J</dt>
+                <dd>
+                    <a href="/jinan">济南</a><a href="/jining">济宁</a><a href="/jiaozuo">焦作</a><a href="/jingmen">荆门</a><a href="/jingzhou">荆州</a><a href="/jiangmen">江门</a><a href="/jieyang">揭阳</a><a href="/jiayuguan">嘉峪关</a><a href="/jinchang">金昌</a><a href="/jiuquan">酒泉</a><a href="/jingnan">津南区</a><a href="/jinghai">静海</a><a href="/jiading">嘉定区</a><a href="/jinshan">金山区</a><a href="/jiangbei">江北区</a><a href="/jiulongpo">九龙坡区</a><a href="/jiangjin">江津</a><a href="/jincheng">晋城</a><a href="/jinzhong">晋中</a><a href="/jinzhou">锦州</a><a href="/jilin">吉林</a><a href="/jixi">鸡西</a><a href="/jiamusi">佳木斯</a><a href="/jstz">泰州</a><a href="/jiaxing">嘉兴</a><a href="/jinghua">金华</a><a href="/jingdezhen">景德镇</a><a href="/jiujiang">九江</a><a href="/jian">吉安</a><a href="/jxfz">抚州</a>
+                </dd>
+                <dt>K</dt>
+                <dd>
+                    <a href="/kunming">昆明</a><a href="/karamay">克拉玛依</a><a href="/kezile">克孜勒苏柯尔克孜</a><a href="/keshe">喀什</a><a href="/kaixian">开县</a><a href="/kaifeng">开封</a>
+                </dd>
+                <dt>L</dt>
+                <dd>
+                    <a href="/luwan">卢湾区</a><a href="/lingao">临高</a><a href="/ledong">乐东</a><a href="/lingshui">陵水</a><a href="/liangping">梁平</a><a href="/langfang">廊坊</a><a href="/linfen">临汾</a><a href="/lvliang">吕梁</a><a href="/liaoyang">辽阳</a><a href="/lnchaoyang">朝阳</a><a href="/liaoyuan">辽源</a><a href="/lianyungang">连云港</a><a href="/lishui">丽水</a><a href="/liuan">六安</a><a href="/longyan">龙岩</a><a href="/laiwu">莱芜</a><a href="/linyi">临沂</a><a href="/liaocheng">聊城</a><a href="/luoyang">洛阳</a><a href="/luohe">漯河</a><a href="/loudi">娄底</a><a href="/liuzhou">柳州</a><a href="/laibin">来宾</a><a href="/luzhou">泸州</a><a href="/leshan">乐山</a><a href="/liangshan">凉山</a><a href="/liupanshui">六盘水</a><a href="/lijiang">丽江</a><a href="/lincang">临沧</a><a href="/lasa">拉萨</a><a href="/lingzhi">林芝</a><a href="/lanzhou">兰州</a><a href="/longnan">陇南</a><a href="/linxia">临夏</a>
+                </dd>
+            </dl>   <dl style="display: none;" class="none">
+                <dt>M</dt>
+                <dd>
+                    <a href="/mentougou">门头沟区</a><a href="/miyun">密云</a><a href="/minhang">闵行区</a><a href="/mudanjiang">牡丹江</a><a href="/maanshan">马鞍山</a><a href="/maoming">茂名</a><a href="/meizhou">梅州</a><a href="/mianyang">绵阳</a><a href="/meishan">眉山</a>
+                </dd>
+                <dt>N</dt>
+                <dd>
+                    <a href="/nanjing">南京</a><a href="/nantong">南通</a><a href="/ningbo">宁波</a><a href="/nanning">南宁</a><a href="/nanchang">南昌</a><a href="/nanyang">南阳</a><a href="/neijiang">内江</a><a href="/nanchong">南充</a><a href="/nujiang">怒江</a><a href="/naqu">那曲</a><a href="/nanping">南平</a><a href="/ningde">宁德</a><a href="/nankai">南开区</a><a href="/ninghe">宁河</a><a href="/nanhui">南汇区</a><a href="/nansha">南沙群岛</a><a href="/nanchuan">南川</a>
+                </dd>
+                <dt>O</dt>
+                <dd>
+                    <a href="/ordos">鄂尔多斯</a>
+                </dd>
+                <dt>P</dt>
+                <dd>
+                    <a href="/pinggu">平谷区</a><a href="/putuo">普陀区</a><a href="/pudongxinqu">浦东新区</a><a href="/pengshui">彭水</a><a href="/panjin">盘锦</a><a href="/putian">莆田</a><a href="/pingxiang">萍乡</a><a href="/pingdingshan">平顶山</a><a href="/puyang">濮阳</a><a href="/panzhihua">攀枝花</a><a href="/pingliang">平凉</a>
+                </dd>
+                <dt>Q</dt>
+                <dd>
+                    <a href="/quanzhou">泉州</a><a href="/qingdao">青岛</a><a href="/qingyuan">清远</a><a href="/qinzhou">钦州</a><a href="/qianxinan">黔西南</a><a href="/qiandongnan">黔东南</a><a href="/qiannan">黔南</a><a href="/qujing">曲靖</a><a href="/qingyang">庆阳</a><a href="/qingpu">青浦区</a><a href="/qianjiang">潜江</a><a href="/qionghai">琼海</a><a href="/qiongzhong">琼中</a><a href="/qijiang">綦江</a><a href="/qinhuangdao">秦皇岛</a><a href="/qqhr">齐齐哈尔</a><a href="/qitaihe">七台河</a><a href="/quzhou">衢州</a>
+                </dd>
+                <dt>R</dt>
+                <dd>
+                    <a href="/rongchang">荣昌</a><a href="/rizhao">日照</a><a href="/rikaze">日喀则</a>
+                </dd>
+                <dt>S</dt>
+                <dd>
+                    <a href="/shanghai">上海</a><a href="/shenyang">沈阳</a><a href="/shijiazhuang">石家庄</a><a href="/suzhou">苏州</a><a href="/shaoxing">绍兴</a><a href="/shenzhen">深圳</a><a href="/shantou">汕头</a><a href="/shanwei">汕尾</a><a href="/sanya">三亚</a><a href="/suining">遂宁</a><a href="/simao">思茅</a><a href="/shannan">山南</a><a href="/sxyulin">榆林</a><a href="/shangluo">商洛</a><a href="/shizuishan">石嘴山</a><a href="/sanming">三明</a><a href="/shangrao">上饶</a><a href="/sanmenxia">三门峡</a><a href="/shangqiu">商丘</a><a href="/shiyan">十堰</a><a href="/suizhou">随州</a><a href="/shaoyang">邵阳</a><a href="/shaoguan">韶关</a><a href="/suqian">宿迁</a><a href="/shuozhou">朔州</a><a href="/siping">四平</a><a href="/songyuan">松原</a><a href="/shuangyashan">双鸭山</a><a href="/suihua">绥化</a><a href="/shunyi">顺义区</a><a href="/shjingan">静安区</a><a href="/songjiang">松江区</a><a href="/shfxq">奉贤区</a><a href="/shennongjia">神农架</a><a href="/shapingba">沙坪坝区</a><a href="/shuangqiao">双桥区</a><a href="/shizhu">石柱</a><a href="/shihezi">石河子</a>
+                </dd>
+                <dt>T</dt>
+                <dd>
+                    <a href="/tianjin">天津</a><a href="/taizhou">台州</a><a href="/tangshan">唐山</a><a href="/taiyuan">太原</a><a href="/tongliao">通辽</a><a href="/tieling">铁岭</a><a href="/tonghua">通化</a><a href="/tongling">铜陵</a><a href="/taian">泰安</a><a href="/tongren">铜仁</a><a href="/tongchuan">铜川</a><a href="/tianshui">天水</a><a href="/turpan">吐鲁番</a><a href="/tacheng">塔城</a><a href="/taiwan">台湾</a><a href="/tjtebei">河北区</a><a href="/tanggu">塘沽区</a><a href="/tjdongli">东丽区</a><a href="/tjjx">蓟县</a><a href="/tianmen">天门</a><a href="/tunchang">屯昌</a><a href="/tongnan">潼南</a><a href="/tongliang">铜梁</a><a href="/tumushuke">图木舒克</a>
+                </dd>
+            </dl>   <dl style="display: none;" class="none">
+                <dt>U</dt>
+                <dd>
+                    <a href="/urumchi">乌鲁木齐</a>
+                </dd>
+                <dt>W</dt>
+                <dd>
+                    <a href="/wuxi">无锡</a><a href="/wenzhou">温州</a><a href="/wuhan">武汉</a><a href="/wuzhou">梧州</a><a href="/wenshan">文山</a><a href="/weinan">渭南</a><a href="/wuwei">武威</a><a href="/wuzhong">吴忠</a><a href="/wuhu">芜湖</a><a href="/weifang">潍坊</a><a href="/weihai">威海</a><a href="/wuqing">武清区</a><a href="/wuzhishan">五指山</a><a href="/wenchang">文昌</a><a href="/wanning">万宁</a><a href="/wanzhou">万州区</a><a href="/wansheng">万盛区</a><a href="/wulong">武隆</a><a href="/wushan">巫山</a><a href="/wujiaqu">五家渠</a><a href="/wuhai">乌海</a><a href="/wulanchabu">乌兰察布</a>
+                </dd>
+                <dt>X</dt>
+                <dd>
+                    <a href="/xiamen">厦门</a><a href="/xian">西安</a><a href="/xuzhou">徐州</a><a href="/xuancheng">宣城</a><a href="/xianyang">咸阳</a><a href="/xining">西宁</a><a href="/xiangyan">襄阳</a><a href="/xinyu">新余</a><a href="/xinxiang">新乡</a><a href="/xuchang">许昌</a><a href="/xinyang">信阳</a><a href="/xiangfan">襄樊</a><a href="/xiaogan">孝感</a><a href="/xianning">咸宁</a><a href="/xiangtan">湘潭</a><a href="/xiangxi">湘西</a><a href="/xsbn">西双版纳</a><a href="/xiqing">西青区</a><a href="/xuhui">徐汇区</a><a href="/xiantao">仙桃</a><a href="/xisha">西沙群岛</a><a href="/xiushan">秀山</a><a href="/xingtai">邢台</a><a href="/xinzhou">忻州</a><a href="/xinganmeng">兴安盟</a><a href="/xlgl">锡林郭勒盟</a>
+                </dd>
+                <dt>Y</dt>
+                <dd>
+                    <a href="/yantai">烟台</a><a href="/yellowstone">黄石</a><a href="/yichang">宜昌</a><a href="/yueyang">岳阳</a><a href="/yiyang">益阳</a><a href="/yongzhou">永州</a><a href="/yangjiang">阳江</a><a href="/yunfu">云浮</a><a href="/yulin">玉林</a><a href="/yibin">宜宾</a><a href="/yaan">雅安</a><a href="/yuxi">玉溪</a><a href="/yanan">延安</a><a href="/yushu">玉树</a><a href="/yinchuan">银川</a><a href="/yili">伊犁</a><a href="/yanqing">延庆</a><a href="/yangpu">杨浦区</a><a href="/yuzhongqu">渝中区</a><a href="/yubei">渝北区</a><a href="/yunyang">云阳</a><a href="/youyang">酉阳</a><a href="/yongchuan">永川</a><a href="/yangquan">阳泉</a><a href="/yuncheng">运城</a><a href="/yingkou">营口</a><a href="/yanbian">延边</a><a href="/yichuncity">伊春</a><a href="/yancheng">盐城</a><a href="/yangzhou">扬州</a><a href="/yingtan">鹰潭</a><a href="/yichun">宜春</a>
+                </dd>
+                <dt>Z</dt>
+                <dd>
+                    <a href="/zhuhai">珠海</a><a href="/zhengzhou">郑州</a><a href="/zhoukou">周口</a><a href="/zhumadian">驻马店</a><a href="/zhuzhou">株洲</a><a href="/zhangjiajie">张家界</a><a href="/zhanjiang">湛江</a><a href="/zhaoqing">肇庆</a><a href="/zhongshan">中山</a><a href="/zigong">自贡</a><a href="/ziyang">资阳</a><a href="/zunyi">遵义</a><a href="/zhaotong">昭通</a><a href="/zhangye">张掖</a><a href="/zhongwei">中卫</a><a href="/zhabei">闸北区</a><a href="/zhongsha">中沙群岛</a><a href="/zhongxian">忠县</a><a href="/zhangjiakou">张家口</a><a href="/zhenjiang">镇江</a><a href="/zhoushan">舟山</a><a href="/zhangzhou">漳州</a><a href="/zibo">淄博</a><a href="/zaozhuang">枣庄</a>
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+</div>
+
+            </div>
+
+            <div class="top_lefty" id="lefty">
+                
+                    <a href="/user/login"><img src="/style/images/dl.jpg" /></a>
+                    <a href="/user/register" rel="nofollow">&nbsp;<img src="/style/images/zc.jpg" /></a>
+
+
+           
+
+                       
+                </div>
+                    <script>
+                            $("#lefty").load("/home/checklogin", function () {
+                            })
+                   </script>
+                </div>
+
+                    <div class="top_right" style="width:520px;">
+                        <div class="top_rightdh"><img src="/style/images/topdh.jpg" />4006-011-865</div>
+                        <div class="top_rightzi" style="width:365px;">
+                            <a href="http://www.maxlaw.cn/">返回首页  | </a>
+                            <div class="dw2">
+                                <div class="top_leftya2">
+                                    手机站 |
+                                    <div class="cityList2" style="display:none;">
+                                        <div class="cityListBox2">
+                                            <a href="http://m.maxlaw.cn/">
+                                                <img src="/style/images/smwx.jpg" />
+                                            </a>
+                                            <font>扫描二维码<br />进入手机站</font>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="/dh" style="width:70px;">
+                                律师黄页  |
+                            </a>
+                            <a href="/localservice.html" rel="nofollow" style="width:70px;">
+                                同城服务  |
+                            </a>
+                            <a href="http://www.weibanan.com/" rel="nofollow">微办案APP</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        <!--logo-->
+<div class="logobig">
+    <div class="logo">
+        <a href="/"><img alt="大律师网" src="/style/images/logo.gif" title="大律师网 - 最大的法律咨询平台" /></a>
+        <div class="logo_right">
+
+            <div class="search">
+                <div class="search_subnav">
+                    <div class="search_left">律师</div>
+                    <ul class="subnav">
+                        <li onclick="show('1')">律师</li>
+                        <li onclick="show('3')">律所</li>
+                        <li onclick="show('2')">法律咨询</li>
+                    </ul>
+                </div>
+                <form id="seachform" action="/law" method="post">
+                    <input type="text" name="key" id="menukey" class="search_shuru" value="请在此输入您要搜索的内容！" />
+                    <input class="search_anniu" type="submit" name="" onclick="return valempty();" value="搜索"  />
+                </form>
+            </div>
+
+            <div class="flwt">
+                <div class="flwt_top">有法律问题要寻求律师帮助您可以选择</div>
+                <div class="flwt_bottom">
+                    <div class="flwt_zixun1"><a target="_blank" href="/ask/quick">免费法律咨询</a></div>
+                    <div class="flwt_zixun2"><a target="_blank" href="/ask/ydy">一对一律师咨询</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        <!--导航-->
+<div class="daohang" id="daohang">
+    <div class="daohang_M clearfix">
+        <div class="daohang_L"></div>
+        <div class="daohangbig">
+
+            <a class="wzsy" href="/">网 站<br /> 首 页</a>
+            <div class="xianzuo"><img src="/style/images/xz2.jpg" /></div>
+
+            <div class="zixun01">
+                <div class="zixun_c01">
+                    <img src="/style/images/zixun01.jpg" alt="资讯" />
+                    <ul class="zixun_zi01">
+                        <li><a href="/news">法律资讯</a></li>
+                        <li><a href="/news/tupian">图片新闻</a></li>
+                        <li><a href="/anyuan/list"><span style="color:yellow;font-weight:bold;">最新案源</span></a></li>
+                        <li><a href="/news/lawlist">律师博文</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zixun">
+                <div class="zixun_c">
+                    <img src="/style/images/zx.jpg" alt="咨询" />
+                    <ul class="zixun_zi">
+                        <li><a href="/ask">法律咨询</a></li>
+                        <li><a href="/anyuan/wt">案件委托</a></li>
+                        <li><a href="/ask/quick">快速提问</a></li>
+                        <li><a href="/ask/list"><span style="color:yellow;font-weight:bold;">最新咨询</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lvshi">
+                <div class="lvshi_c">
+                    <img src="/style/images/lvs.jpg" alt="律师" />
+                    <ul class="lvshi_zi">
+                        <li><a href="/law"><span style="color:yellow;font-weight:bold;">找律师</span></a></li>
+                        <li><a href="/city">城市导航</a></li>
+                        <li><a href="/ask/reply" title="律师在线解答">律师解答</a></li>
+                        <li><a href="/lawfirm">找律所</a></li>
+                        <li style="text-align: center;"><a href="/anyuan">找案源</a></li>
+                        <li><a target="_blank" href="/fangtan">律师专访</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style=" border-left:1px dashed #2c96e5;" class="zixun">
+                <div class="zixun_c">
+                    <img src="/style/images/flv.jpg" alt="法律" />
+                    <ul class="zixun_zi">
+                        <li><a target="_blank" href="/zhishi"><span style="color:yellow;font-weight:bold;">法律知识</span></a></li>
+                        <li><a target="_blank" href="/anli">法律案例</a></li>
+                        <li><a target="_blank" href="/ask/success">成功案例</a></li>
+                        <li><a target="_blank" href="/zt">法律专题</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style=" border-right:none;" class="zonghe">
+                <div class="zonghe_c">
+                    <img src="/style/images/zonghe.jpg" alt="综合" />
+                    <ul class="zonghe_zi">
+                        <li><a href="/life2015" rel="nofollow">企业风采</a></li>
+                        <li><a href="/sitemap">网站导航</a></li>
+                        <li><a href="/about" rel="nofollow"><span style="color:yellow;font-weight:bold;">关于我们</span></a></li>
+                        <li><a href="/cp/2016/" rel="nofollow" target="_blank">会员服务</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="daohang_R"></div>
+    </div>
+</div>
+
+
+    
+
+
+<div class="error">
+    <span>很抱歉!您要访问的页面暂时没有找到......</span>
+    <img src="/images/404.jpg" />
+    <p>但您可以从这里更快捷的找到您想要的内容</p>
+</div>
+
+<div class="menu_list">
+    <ul>
+        <li><a href="/law" target="_blank">查找律师</a></li>
+        <li><a href="/ask" target="_blank">法律咨询</a></li>
+        <li><a href="/anyuan/wt" target="_blank">案件委托</a></li>
+        <li><a href="/top" target="_blank">法律风云榜</a></li>
+        <li><a href="/zhishi" target="_blank">法律知识</a></li>
+        <li><a href="/user/login" target="_blank">会员登录</a></li>
+        <li><a href="/news/lawlist" target="_blank">律师博文</a></li>
+        <li><a href="/ask/list" target="_blank">最新咨询</a></li>
+        <li><a href="/anyuan" target="_blank">法律案源</a></li>
+        <li><a href="/news/toutiao" target="_blank">头条新闻</a></li>
+        <li><a href="/zt" target="_blank">法律专题</a></li>
+        <li><a href="/user/register" target="_blank">律师注册</a></li>
+        <li><a href="/fangtan" target="_blank">律师专访</a></li>
+        <li><a href="/ask/quick" target="_blank">快速提问</a></li>
+        <li><a href="/ask/success" target="_blank">成功案例</a></li>
+        <li><a href="/news/tupian" target="_blank">图片新闻</a></li>
+        <li><a href="/zt/shijian" target="_blank">法律事件</a></li>
+        <li><a href="/city" target="_blank">城市导航</a></li>
+        <li><a href="/dh" target="_blank">律师黄页</a></li>
+        <li><a href="/ask/ydy" target="_blank">一对一咨询</a></li>
+        <li><a href="/anyuan/list" target="_blank">最新案源</a></li>
+        <li><a href="/news/dynamic" target="_blank">官方动态</a></li>
+        <li><a href="/zt/baike" target="_blank">法律讲堂</a></li>
+        <li><a href="/al" target="_blank">模版展示</a></li>
+        <li><a href="/ask/reply" target="_blank">律师解答</a></li>
+        <li><a href="/ask/tel" target="_blank">电话咨询</a></li>
+        <li><a href="/lawfirm" target="_blank">查找律所</a></li>
+        <li><a href="/life2015" target="_blank">企业风采</a></li>
+        <li><a href="/zuiming" target="_blank">罪名库</a></li>
+        <li><a href="/cp/2016/" target="_blank">会员服务</a></li>
+    </ul>
+</div>
+
+<div class="news_box clearfix">
+    <div class="news_left" style="margin-bottom:10px;">
+        <div class="news_left_top clearfix">
+            <h2>法律风云榜</h2>
+            <a href="/top" target="_blank">更多...</a>
+        </div>
+        <div class="sidebox">
+
+                    <h3 class="clearfix"><em class="em1">1</em><a href="/top/20160629/gjcyhcxz.shtml" target="_blank">北京顺义一公交车与货车相撞 多人受伤</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/gjcyhcxz.shtml" class="a_img" target="_blank"><img src="http://images.maxlaw.cn/UploadPic/newpic/854290330943.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="/top/20160629/gjcyhcxz.shtml" target="_blank" style="color:#808080">今天早上9时许，在顺义区张喜庄村附近，由西向东行驶的顺13路公交车与一辆货车相撞。公交车上多名乘客受伤，货车上1名工人重伤。目前伤者仍在顺义区医院抢救。公交车所属北京骏马客运公司表示将负担乘客医疗费。事发地附近一商店老板介绍，早上9点左右，他突然听到马路上传来猛烈的撞击声，出门后发现， ...</a><a href="/top/20160629/gjcyhcxz.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em1">2</em><a href="/top/20160629/nzfjtxhbxj.shtml" target="_blank">四川男子福建偷小孩被刑拘：村民将其绑电线杆上</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/nzfjtxhbxj.shtml" class="a_img" target="_blank"><img src="http://images.maxlaw.cn/UploadPic/newpic/854290166683.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="/top/20160629/nzfjtxhbxj.shtml" target="_blank" style="color:#808080">6月29日消息，3岁男孩在家门口玩耍，被陌生人强行抱上车，奶奶拦车呼救，村民们赶来，将人贩制服，救出孩子。6月28日上午，这一幕在福建长乐市潭头镇岱西村上演。抢孩子的四川籍男子沈某，被村民抓住后，吓得小便失禁。目前，沈某因涉嫌拐卖儿童罪，已被警方刑事拘留。人贩被绑电线杆，视频在微信热传6月 ...</a><a href="/top/20160629/nzfjtxhbxj.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em1">3</em><a href="/top/20160629/cztpnyglz.shtml" target="_blank">厂长偷拍女员工裸照：为了让其知道社会险恶</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/cztpnyglz.shtml" class="a_img" target="_blank"><img src="http://images.maxlaw.cn/UploadPic/newpic/854290046716.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="/top/20160629/cztpnyglz.shtml" target="_blank" style="color:#808080">近日，记者从石狮锦尚派出所了解到一件“荒唐事”：一名身为厂长的男子叶某，自称为了让和自己关系不错的女子知道社会险恶，居然偷拍对方裸照……近日，20岁的晋江女子王某玲报警称，“有人发图片骚扰她的生活”。接报后，锦尚派出所民警立即展开调查。经了解，叶某和受害人王某玲为同一家彩印厂的同事， ...</a><a href="/top/20160629/cztpnyglz.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">4</em><a href="/top/20160629/dc7glcf28w.shtml" target="_blank">上海市民用“易到”打车7公里车费28万</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/dc7glcf28w.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854289939146.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/dc7glcf28w.shtml" target="_blank" style="color:#808080">现如今，通过手机打车软件叫车已经成市民出行的一种新型方式，然而在6月27日，家住上海长宁的马先生通过&amp;quot;易到&amp;quot;打车软件叫车，打车7公里竟消费28万多元。对方客服表示：可能是系统异常导致的情况6月27日上午，马先生像平日一样打开手机里下载的打车软件“易到”，打车上班。马先生很快就打到了 ...</a>
+                           <a href="/top/20160629/dc7glcf28w.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">5</em><a href="/top/20160629/jjbzqwpmtckxc.shtml" target="_blank">交警便装骑无牌摩托查扣校车拒亮证 警方：已停职</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/jjbzqwpmtckxc.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854289816414.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/jjbzqwpmtckxc.shtml" target="_blank" style="color:#808080">6月27日，一段&amp;quot;福建省石狮市交警穿便装骑无牌摩托车未带证件查扣校车&amp;quot;的视频在网上传播。6月29日，石狮市公安局政工科工作人员告诉记者，涉事交警王某某因不规范执法被停止执行职务，目前石狮市警务督察部门正对其行为进行调查。长约8分12秒的视频显示，一位自称“交警”的男子，身穿黑色上衣 ...</a>
+                           <a href="/top/20160629/jjbzqwpmtckxc.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">6</em><a href="/top/20160629/xxmlxscf4wd.shtml" target="_blank">曝学生营养餐烂菜 回应：学校冒领学生餐费4万多</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/xxmlxscf4wd.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854289636598.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/xxmlxscf4wd.shtml" target="_blank" style="color:#808080">近日有网友爆料称，云南巧家包谷垴乡中心校“领导”，以低廉价格采购疑似变质蔬菜，高价卖给学校食堂做“营养餐”，从中赚取差价。爆料帖子中，附有大量变质蔬菜、《巧家县学校食堂食品采购与进货验收台账》的复印件以及疑似手机短信截图的照片。对此，巧家县教育部门告诉记者，初步核实，该校人员确有通 ...</a>
+                           <a href="/top/20160629/xxmlxscf4wd.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">7</em><a href="/top/20160629/kccjxcbz.shtml" target="_blank">情侣开车吵架 小伙突然下车被撞</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/kccjxcbz.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854289178178.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/kccjxcbz.shtml" target="_blank" style="color:#808080">冲动是魔鬼，就在6月25日半夜，两江新区人和古木峰立交发生惊险一幕，一对小情侣在正在行驶的车辆上发生争吵，小伙一时冲动突然打开车门，女友急踩刹车，在车还没有停稳的情况下，小伙跑下车，结果被一辆正在行驶过来的渣车撞倒在地。情侣吵架小伙半路跑下车这对吵架的情侣一个叫小刘一个叫小黄。当天晚 ...</a>
+                           <a href="/top/20160629/kccjxcbz.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">8</em><a href="/top/20160629/yjzjbcmj.shtml" target="_blank">瘾君子拒捕驾车撞击警车刺伤民警获刑</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/yjzjbcmj.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854288953479.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/yjzjbcmj.shtml" target="_blank" style="color:#808080">吸毒人员胡某吸食毒品后，拒捕时驾车撞击拦截的警车，还坐在车上挥刀砍向民警，致两名民警受伤。昨日丰台法院审理后当庭宣判，胡某因犯妨害公务罪，被判处有期徒刑一年六个月。毒驾拒捕扎伤民警1983年出生的胡某此前曾多次因涉毒被处理，2010年6月，因贩卖毒品罪被海淀法院判处有期徒刑九个月，并处罚金 ...</a>
+                           <a href="/top/20160629/yjzjbcmj.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">9</em><a href="/top/20160629/jyzwsjsb.shtml" target="_blank">女子加油站油枪前玩手机引发爆炸 全身60%灼伤</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/jyzwsjsb.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854288860358.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/jyzwsjsb.shtml" target="_blank" style="color:#808080">随着3C产品普及，人们花在手机上的时间也越来越多。马来西亚1名25岁印裔女子疑在加油时边讲电话，引发气体爆炸，导致她正面遭火吻，全身至少60%被灼伤，情况相当危急。马来西亚吉隆坡文良港地区28日发生一起爆炸意外，1名25岁女子在加油站加油时，站在油枪前玩手机，突然发生爆炸，导致她全身受到火舌及 ...</a>
+                           <a href="/top/20160629/jyzwsjsb.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">10</em><a href="/top/20160629/gqwtwszbgw.shtml" target="_blank">西宁一女子因感情问题网上直播割腕自杀</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="/top/20160629/gqwtwszbgw.shtml" class="a_img" target="_blank">
+                                <img src="http://images.maxlaw.cn/UploadPic/newpic/854288605347.jpg" style="width:174px; height:125px;" />
+                            </a>
+                                <span><a href="/top/20160629/gqwtwszbgw.shtml" target="_blank" style="color:#808080">6月29日报道，25日晚，青海西宁一名年轻女子因感情问题割脉自杀，又将自杀照片在微博发布，直播自杀，同时向网民道别。网民发现后报警，警方接报后破门入屋，并将女子送院治理。目前，女子情况稳定。从现场照片可见，女子左手手腕有一处长且深的伤痕，鲜血如注，一动不动地躺卧在沙发上。警员及女子友人 ...</a>
+                           <a href="/top/20160629/gqwtwszbgw.shtml" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+        </div>
+
+    </div>
+
+    <div class="news_right" style="height: 1964px;">
+        <div class="news_right_top clearfix">
+            <h2>最新专题</h2>
+            <a href="/zt" target="_blank">更多...</a>
+        </div>
+        <div class="sidebox">
+
+                    <h3 class="clearfix"><em class="em1">1</em><a href="http://www.maxlaw.cn/ft/jianyongfa/" target="_blank">刑辩专家律师——简永发</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/jianyongfa/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9858/851794408772.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/jianyongfa/" target="_blank" style="color:#808080">珍爱生命，远离毒品！学会用法律的武器维护自己正当的权利。作为普通人，我们也要积极学习法律知识，懂得用法律的武器维护自己的权利。 ...</a> <a href="http://www.maxlaw.cn/ft/jianyongfa/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em1">2</em><a href="http://www.maxlaw.cn/ft/sunhu/" target="_blank">理论与实践的充分结合者——孙湖</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/sunhu/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9858/851793929576.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/sunhu/" target="_blank" style="color:#808080">立足于实务成效，以事实为依据、以法律为准绳，擅长将律师技艺发挥到极致，竭力维护当事人的合法权利，酷爱剑走偏锋，出奇制胜。 ...</a> <a href="http://www.maxlaw.cn/ft/sunhu/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em1">3</em><a href="http://www.maxlaw.cn/ft/dengqun/" target="_blank">资深刑事律师——邓群</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/dengqun/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9858/851793524183.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/dengqun/" target="_blank" style="color:#808080">当遇到公权力机关的执法行为时，当事人通常处于弱势地位，往往难以保持头脑清醒。而且普通民众往往难以熟知详细的法律法规，所以更需要律师的介入，从而获得全面、准确的法律知识，维护当事人的合法权益。 ...</a> <a href="http://www.maxlaw.cn/ft/dengqun/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">4</em><a href="http://www.maxlaw.cn/ft/yangjie/" target="_blank">高级法律顾问——杨杰律师</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/yangjie/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9832/849537405952.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/yangjie/" target="_blank" style="color:#808080">受人之托，忠人之事，无论是法务咨询还是诉讼参与，律师当时竭尽全力合法维护当事人的利益。始终秉承诚实守信、严谨、细致的执业理念，坚持全心全意维护当事人合法权益的执业原则。 ...</a><a href="http://www.maxlaw.cn/ft/yangjie/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">5</em><a href="http://www.maxlaw.cn/ft/yangkunpeng/" target="_blank">上市专家——杨鲲鹏律师</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/yangkunpeng/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9832/849537002802.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/yangkunpeng/" target="_blank" style="color:#808080">受人之托，忠人之事，以优者为师，以德之心，用法之器，勤学奋进，创新思维，追求真理和匡扶正义的路上，以身作则，无愧良心，脚踏实地一步步前进，是一名合格的法律人！ ...</a><a href="http://www.maxlaw.cn/ft/yangkunpeng/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">6</em><a href="http://www.maxlaw.cn/ft/wangjiping/" target="_blank">资深合同律师——王继平</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/wangjiping/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9826/849022292182.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/wangjiping/" target="_blank" style="color:#808080">想当事人所想，急当事人所急，努力争取客户合法权益的最大化，用法律手段捍卫当事人的合法权益，当是为律师者之天职。 ...</a><a href="http://www.maxlaw.cn/ft/wangjiping/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">7</em><a href="http://www.maxlaw.cn/ft/duanliyun/" target="_blank">婚姻权益专家——段丽云</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/duanliyun/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9826/849021997170.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/duanliyun/" target="_blank" style="color:#808080">坚持以诚信和正直取信于当事人；不唯上，不唯权，不唯书，不唯钱；不做高高在上的学者，也不做挑词架讼的讼棍；坚持维护当事人利益至上，维护公平与正义至上，为各类企事业单位和公民提供优质高效的法律服务。 ...</a><a href="http://www.maxlaw.cn/ft/duanliyun/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">8</em><a href="http://www.maxlaw.cn/ft/wangqingshe/" target="_blank">公司的保护者——王庆社</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/wangqingshe/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9796/846431818216.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/wangqingshe/" target="_blank" style="color:#808080">展望未来，华商渴望更大的发展，成就百年华商的梦想。华商将积极探索科学的管理模式，以“法律维护正义、法律创造价值”为己任，恪守高度自我奉献精神及对社会的责任心，不断创新法律服务产品，尽心竭力为客户提供专业、精细、高效的法律服务，用五到十年的时间发展成为我国法律服务业的领导性品牌。 ...</a><a href="http://www.maxlaw.cn/ft/wangqingshe/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">9</em><a href="http://www.maxlaw.cn/ft/guoshengli" target="_blank">民间借贷律师——郭胜利</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/guoshengli" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9796/846431611637.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/guoshengli" target="_blank" style="color:#808080">“热情、务实、严谨、高效”是我所的执业理念，“打造品牌律师，塑造品牌律师事务所”是我所的办所宗旨，致力于我所的文化建设和品牌建设，建立高素质的律师队伍，不断提高业务能力和服务水平，强化服务深度，脚踏实地地走出属于自己的道路，是我所不断追求的执业目标。 ...</a><a href="http://www.maxlaw.cn/ft/guoshengli" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">10</em><a href="http://www.maxlaw.cn/ft/chenjianjun/" target="_blank">法道捍卫者——陈建军</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/chenjianjun/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9796/846431261773.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/chenjianjun/" target="_blank" style="color:#808080">陈建军律师，男，南开大学法学学士，复旦大学法学硕士。多年系统的法学教育，法学功底相当深厚。十余年的律师执业经历，积累了相当丰富的诉讼与非诉讼经验。 ...</a><a href="http://www.maxlaw.cn/ft/chenjianjun/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+                    <h3 class="clearfix"><em class="em2">11</em><a href="http://www.maxlaw.cn/ft/baolimin/" target="_blank">西安合同纠纷律师——包丽民</a></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="http://www.maxlaw.cn/ft/baolimin/" class="a_img" target="_blank"><img src="http://images.maxlaw.cn//UploadPic/9763/843587928531.jpg" style="width:174px; height:125px;" /></a>
+                            <span><a href="http://www.maxlaw.cn/ft/baolimin/" target="_blank" style="color:#808080">执业多年，代理了许许多多的各类案件，感触颇多，每一个诉讼案件，对于当事人来说，对簿公堂是无奈的选择和最后的机会，只有用心办好每一个案件，才不辜负那一份信任。 ...</a><a href="http://www.maxlaw.cn/ft/baolimin/" target="_blank">【阅读全文】</a></span>
+                        </li>
+                    </ul>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        jQuery(".sidebox").slide({
+            titCell: "h3", //鼠标触发对象
+            targetCell: "ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+            effect: "slideDown", //targetCell下拉效果
+            delayTime: 300, //效果时间
+            triggerTime: 150, //鼠标延迟触发时间（默认150）
+            defaultPlay: true,//默认是否执行效果（默认true）
+            returnDefault: true //鼠标从.sideMen移走后返回默认状态（默认false）
+        });
+    </script>
+
+</div>
+
+<div class="news_genre">
+    <ul class="clearfix">
+        <li>
+            <div class="news_genre_top clearfix">
+                <h3>法律案源</h3>
+                <a href="/anyuan" target="_blank">更多...</a>
+            </div>
+            <dl>
+                    <dt><a href="/anyuan/769691653287.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">我己付死亡加药费24万能帮我看理培多少钱</a></dt>
+                    <dt><a href="/anyuan/790340727244.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">帮我介绍个在苏州昆山这边的律师</a></dt>
+                    <dt><a href="/anyuan/790419973827.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">我想问下这个报纸有没有法律效果？</a></dt>
+                    <dt><a href="/anyuan/790438222872.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">怎么办？？求助！</a></dt>
+                    <dt><a href="/anyuan/790439403697.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">老板叫我出差北京5-7个月，我拒绝后老板让我自己辞职。</a></dt>
+                    <dt><a href="/anyuan/790450255823.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">我建了个小说站，涉及金额27398，被检察院提起公诉了</a></dt>
+                    <dt><a href="/anyuan/790765243368.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">过了六个月申请能判离婚吗？</a></dt>
+                    <dt><a href="/anyuan/790766633271.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">向法院起诉借款人具备哪些资料</a></dt>
+                    <dt><a href="/anyuan/790767825392.html" style="display:block;width:322px;overflow:hidden;height:30px;" target="_blank">借款没有写还款日期截止到哪天直接写着借多少钱，有法律效应吗？</a></dt>
+            </dl>
+        </li>
+        <li>
+            <div class="news_genre_top clearfix">
+                <h3>法律咨询</h3>
+                <a href="/ask/list" target="_blank">更多...</a>
+            </div>
+            <dl>
+                           <dt><a href="/ask/850232594766.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">房子没有房产证只有购房合同拆迁的话，能分到吗？</a></dt>
+                           <dt><a href="/ask/854292872628.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">我想咨询一下交通事故方面的法律问题</a></dt>
+                           <dt><a href="/ask/854292521252.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">如果法院判决的话财产如何判决？</a></dt>
+                           <dt><a href="/ask/850232607723.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">离婚拆迁房能分割吗</a></dt>
+                           <dt><a href="/ask/850232596250.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">安置房协议是我老公签署的离婚时,我能否分割一半?</a></dt>
+                           <dt><a href="/ask/854292675289.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">有没有关于私人骚扰相关的法律？</a></dt>
+                           <dt><a href="/ask/850232595713.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">房子没有办理过户被抵押了怎么办</a></dt>
+                           <dt><a href="/ask/850232612271.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">女方不同意离婚一直拖着怎么办</a></dt>
+                           <dt><a href="/ask/850232602149.html" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">传播气功医学文化被拘留</a></dt>
+
+            </dl>
+        </li>
+        <li>
+            <div class="news_genre_top clearfix">
+                <h3>律师博文</h3>
+                <a href="/law" target="_blank">更多...</a>
+            </div>
+            <dl>
+
+                    <dt>
+                        <a href="/l/20160622/853689651677.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            自由权利的呼喊——布鲁斯音乐
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160622/853689337324.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            艺术的蜕变——从音乐走向法律  
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853091318328.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            怕什么真理无穷，进一寸有一寸的喜欢
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853091288510.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            刑辩之路，既已选择，定不相负
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853091271262.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            相遇金亚太是我心之所属
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853091126749.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            金亚太简介
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853091031549.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            持刀取财一定是抢劫吗？
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853091013840.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            刑事附带民事诉讼中死亡赔偿金应当赔偿的法律依据
+                        </a>
+                    </dt>
+                    <dt>
+                        <a href="/l/20160615/853090992229.shtml" target="_blank" style="display:block;width:322px;overflow:hidden;height:30px;">
+                            致律师前辈们的一封信：一位律师助理的自白
+                        </a>
+                    </dt>
+
+            </dl>
+        </li>
+    </ul>
+</div>
+
+
+
+        <!--底部-->
+<div class="dibu">
+    <div class="dibubox">
+
+        <div class="gzhbox">
+            <div class="gzht">
+                <span>公众号</span>
+                <span>手机站</span>
+            </div>
+            <div class="gzhb">
+                <img style="width:109px; height:109px;" src="/images/weixin.jpg" />
+                <img style="width:109px; height:109px;" src="/images/sjz.jpg" />
+                <img src="/images/saoyisao.png" />
+            </div>
+        </div>
+
+        <div class="kstwbox">
+            <div class="gzht">
+                快速提问
+            </div>
+            <div class="kstwb">
+                <div class="kstwlinebox">
+                    <form action="/ask/quick?type=1" method="post">
+                        <div class="kstwL">
+                            <div class="kstwpic">
+                            </div>
+                            <input class="kstwshuru" type="text" name="title" value="请输入您的问题..." />
+                        </div>
+                        <input class="kstwbutton" type="submit" value="快速提问" />
+                    </form>
+                </div>
+                <ul>
+                    <li><a target="_blank" href="/user/register" rel="nofollow">律师注册</a></li>
+                    <li><a target="_blank" href="/about" rel="nofollow">关于我们</a></li>
+                    
+                    <li><a target="_blank" href="http://m.maxlaw.cn/">手机大律师</a></li>
+                    <li><a target="_blank" href="/fxt" rel="nofollow">会员服务</a></li>
+                    <li><a target="_blank" href="/sitemap">网站导航</a></li>
+                    <li><a target="_blank" href="/al" rel="nofollow">模板展示</a></li>
+                    <li><a target="_blank" href="/news/dynamic" rel="nofollow">公司动态</a></li>
+                    <li><a target="_blank" href="/pay" rel="nofollow">付款方式</a></li>
+                    <li><a target="_blank" href="/other/fixip" rel="nofollow">修正地区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lxwmbox">
+            <div class="gzht">
+                联系我们
+                
+            </div>
+            <div class="lxwmboxb">
+                <ul>
+                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2851289666&site=qq&menu=yes" rel="nofollow"></a></li>
+                    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2851289688&site=qq&menu=yes" rel="nofollow"></a></li>
+                </ul>
+                <div class="lxwmtxt">
+                    地  址：厦门市软件园二期望海路65号楼之一4楼
+                </div>
+                <div class="lxwmtxt">
+                    Email：2851289649@qq.com
+                </div>
+                <div class="rxdh">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="comeUrl" name="comeUrl" value="http://www.maxlaw.cn/ask" />  
+<!--foot-->
+<div class="foot" style="height:121px;">
+    <div class="footbox">
+        <ul style="width:920px;">
+            <li><a><img src="/style/images/zBtn02.gif" /></a></li>
+            <li><a href="http://www.maxlaw.cn/yyzz" rel="nofollow"><img src="/style/images/zBtn03.gif" /></a></li>
+            <li><a href="http://net.china.com.cn/" rel="nofollow"><img src="/style/images/zBtn04.gif" /></a></li>
+            <li><a href="http://www.maxlaw.cn/beian" rel="nofollow"><img src="/style/images/zBtn05.gif" /></a></li>
+            <li><a href="/zz_zzdx" rel="nofollow"><img src="/style/images/zzdx.gif" /></a></li>
+            <li><a href="http://www.maxlaw.cn/zz_zzq2014" rel="nofollow"><img src="/style/images/zBtn06.gif" /></a></li>
+            <li style="width:148px;"><a href="/gxsjqy"><img src="/style/images/gxjs.jpg" /></a></li>
+        </ul>
+        <div class="foottxt" style=" width:940px;margin-top:10px; text-align:center">
+            <a href="/zz_zzdx" style="color: #0A68AE; font-weight: bold;">增值电信业务经营许可证B2-20150091</a> Copyright @ 2008-2016 <a href="http://www.maxlaw.cn">大律师网</a> 版权所有
+            <script src="http://s95.cnzz.com/stat.php?id=2828785&web_id=2828785&show=pic" language="JavaScript"></script>
+            <script src="/js/BaiduCount.js"></script>
+
+            <script>
+                (function () {
+                    var bp = document.createElement('script');
+                    bp.src = '//push.zhanzhang.baidu.com/push.js';
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
+            <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "大律师网的这个文章非常不错，您一定不错过!!!", "bdMini": "6", "bdMiniList": ["mshare", "weixin", "qzone", "tsina", "sqq", "tqq", "renren", "ibaidu", "bdhome", "thx", "tieba", "tqf", "bdxc", "kaixin001", "qingbiji", "bdysc", "douban", "youdao", "fx", "mail", "meilishuo", "mogujie", "xinhua", "diandian", "huaban", "people", "hx", "sdo", "isohu", "yaolan", "wealink", "ty", "iguba", "fbook", "twi", "linkedin", "h163", "evernotecn", "print"], "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "slide": { "type": "slide", "bdImg": "6", "bdPos": "right", "bdTop": "542" }, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+        </div>
+        <div class="foottxt" style="text-align:center;margin-top:10px;">法律顾问：<a href="http://www.allbrightlaw.com/" rel="nofollow" target="_blank">上海锦天城（厦门）律师事务所</a> | 国家信息产业部备案: 闽ICP备08005907号</div>
+    </div>
+</div>
+
+
+    
+  
+</body>
+</html>
+
+
+
+

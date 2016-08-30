@@ -1,0 +1,159 @@
+<include file='public:header'/>    
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('index/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			微店购物车
+		</div>
+	</header>
+	
+	<form method="post" id="cart-form"  action="<{:U('mart/order',array('t'=>$nowtime))}>">
+	<php>$total_money = 0;</php>
+		<foreach name="cart_shops" item="var">
+			<php> $this_money = 0 ;</php>
+			<foreach name="cart_goods" item="item">
+			<if condition="$item['shop_id'] eq $var[shop_id]">
+				<php>$this_money += $item['mall_price'] *  $item['buy_num'] ;</php>
+			</if>
+			</foreach>
+			<php>
+				$cha = ($var['mexpress']/100 - $this_money/ 100);
+			</php>
+            <div class="cart-shop" id="shop-<{$var['shop_id']}>">	
+				<span class="float-left">	
+				  <a href="<{:U('shop/detail',array('shop_id'=>$var['shop_id']))}>"><{$var['shop_name']}></a>
+				  <span class="text-small text-dot">( 本店运费<{:round($var['express']/100,2)}>元 , 满<em class="express-mian"><{:round($var['mexpress']/100,2)}></em>元包邮<span class="express-status"><if condition="$cha gt 0"> , 还差<em class="express-cha"><{$cha}></em>包邮</span> )</span>
+				</span>	
+				<span class="float-right">
+					<i class="icon-angle-right text-gray"></i>
+				</span>
+			</div>
+
+			<ul class="cart-item">	
+			<foreach name="cart_goods" item="item">
+			<if condition="$item['shop_id'] eq $var[shop_id]">
+				<li class="line">	
+					<div class="x3">	
+						<img class="item-pic" src="__ROOT__/attachs/<{$item.photo}>" />	
+					</div>	
+					<div class="x7">	
+						<span class="item-title"><a href="<{:U('mart/detail',array('goods_id'=>$item['goods_id']))}>"><{$item.title}></a></span>		
+						<div class="num-ctrl">
+							<em rel="<{$item['shop_id']}>" data="<{$item.goods_id}>" class="num-jian">-</em>
+							<input data-role="none" data="<{$item.goods_id}>"  type="text" value="<{$item.buy_num}>" rel="<{:round($item['mall_price']/100,2)}>" name="num[<{$item['goods_id']}>]" class="num-num" />
+							<em rel="<{$item['shop_id']}>" data="<{$item.goods_id}>" class="num-jia">+</em>
+						</div>
+					</div>	
+					<div class="x2">
+						<div class="item-total">
+							￥<span id="num-total-<{$item.goods_id}>" class="price"><{:round($item['mall_price'] *  $item['buy_num']/100,2)}></span>	
+							<div class="clearfix">	
+								<span class="item-del"><a href="<{:U('mart/cartdel2',array('goods_id'=>$item['goods_id'],'t'=>$nowtime))}>"><i class="icon-trash-o"></i></a></span>	
+							</div>
+						</div>						
+					</div>	
+				</li>
+			
+			</if>
+			</foreach>
+			</ul>
+			<div class="blank-10 bg"></div>
+		</foreach>		
+	</form>			
+				
+
+
+	<foreach name="cart_goods" item="item">				
+		<php>
+			$total_money+= $item['mall_price'] *  $item['buy_num'];
+		</php>
+	 </foreach>
+		  
+		  
+           <script>
+            function changetotal(obj){
+                var money = obj.parent().find('.num-num').attr('rel');
+                var num = obj.parent().find('.num-num').val();
+                var total =  Math.round(money*num*100)/100;
+				// 邮费差值
+				var cha = Math.round($('#shop-'+obj.attr('rel')).find(".express-cha").html());
+				var old = Math.round($("#num-total-"+obj.attr('data')).html());
+				cha = Math.round(cha - total + old,1);
+				$('#shop-'+obj.attr('rel')).find(".express-cha").html(cha);
+				
+				if(cha <= 0){
+					$('#shop-'+obj.attr('rel')).find(".express-status").hide();
+				}else{
+					$('#shop-'+obj.attr('rel')).find(".express-status").show();
+				}
+				
+				
+				
+                $("#num-total-"+obj.attr('data')).html(total);
+                changealltotal();
+            }
+            
+            function changealltotal(){
+     
+                var total_price = 0;
+                $(".num-num").each(function(){
+                    total_price += $(this).val() * $(this).attr('rel');
+                });
+                $("#jq-total").html('￥'+Math.round(total_price*100)/100);
+            }
+             $(document).ready(function(e){
+                 $(".num-jian").click(function(){
+                    var v = $(this).parent().find(".num-num").val() ;
+                    if(v>1){
+                        v--;
+                        $(this).parent().find(".num-num").val(v);
+                    }
+                     
+                     changetotal($(this));
+                     
+                 });
+                 $(".num-jia").click(function(){
+                     var v = $(this).parent().find(".num-num").val();
+                    if(v<99){
+                        v++;
+                        $(this).parent().find(".num-num").val(v);
+                    }
+                     changetotal($(this));
+                 });
+                 
+                 $(".num-num").change(function(){
+                     if($(this).val()<1){
+                         $(this).val('1');
+                     }
+                     if($(this).val()>99){
+                         $(this).val('99');
+                     }
+                     changetotal($(this));
+                 });
+                 
+             });
+        </script>
+        
+
+	
+	<div id="loader" class="loader">正在加载中……</div>
+
+	<nav class="cart-bar">
+		<span class="cart">
+			<i class="icon-database"></i>
+			<div id="jq-total" class="num">￥<{:round($total_money/100,2)}></div>元
+		</span>
+		<div class="result">
+			<a href="javascript:;" onclick="$('#cart-form').submit();">
+				<button class="button bg-dot">
+				  进入结算
+				</button>
+			</a>
+		</div>
+	</nav>
+	
+
+	
+</body>
+</html>

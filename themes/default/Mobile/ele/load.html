@@ -1,0 +1,17 @@
+<foreach name="list" item="var">
+<li class="line" >
+	<a class="ac" onclick="liclick(this);" href="javascript:;">
+		<div class="x4">
+			<img url="__ROOT__/attachs/<{$var.photo}>" src="__ROOT__/attachs/<{$var.photo}>">
+		</div>
+		<div class="x8">
+			<h5><{$var.product_name}></h5>
+			<p class="price"><span class="unit_price">&yen;<{:round($var['price']/100,2)}></span></p>
+			<h1 style="display:none"><{$var.desc}></h1>
+		</div>
+	</a>
+	<a href="javascript:;" class="item-addcart" val="<{:round($var['price']/100,2)}>" did="<{$var.product_id}>" onclick="addcart(this);">
+		<div class="txt txt-small radius bg-green"><i class="icon-plus"></i></div>
+	</a>
+</li>
+</foreach>

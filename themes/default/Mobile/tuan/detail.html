@@ -1,0 +1,308 @@
+<php>$seo_title = $detail['title'].'团购';</php>
+<include file='public:header'/>    
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('tuan/main')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			团购详情
+		</div>
+		<div class="top-share">
+			<a href="javascript:void(0);" id="share-btn"><i class="icon-share"></i></a>
+		</div>
+	</header>  
+	<div id="share-box" class="share-box">
+		<div class="dialog-mask"></div>
+			<ul class="line">
+				<li class="-mob-share-weibo x3">
+					<img src="/static/default/wap/image/share/share-weibo.png" />
+					<p>新浪微博</p>
+				</li>
+				<li class="-mob-share-tencentweibo x3">
+					<img src="/static/default/wap/image/share/share-twb.png" />
+					<p>腾讯微博</p>
+				</li>
+				<li class="-mob-share-qzone x3">
+					<img src="/static/default/wap/image/share/share-qzone.png" />
+					<p>QQ空间</p>
+				</li>
+				
+				<li class="-mob-share-qq x3">
+					<img src="/static/default/wap/image/share/share-py.png" />
+					<p>QQ好友</p>
+				</li>
+				<li class="-mob-share-weixin x3">
+					<img src="/static/default/wap/image/share/share-weixin.png" />
+					<p>微信</p>
+				</li>
+				<li class="-mob-share-renren x3">
+					<img src="/static/default/wap/image/share/share-renren.png" />
+					<p>人人网</p>
+				</li>
+				<li class="-mob-share-kaixin x3">
+					<img src="/static/default/wap/image/share/share-kaixin.png" />
+					<p>开心网</p>
+				</li>
+				<li id="mui-card-close" class="mui-card-close x3">
+					<img src="/static/default/wap/image/share/share-close.png" />
+					<p>关闭</p>
+				</li>
+			</ul>
+		<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=890ab8bbdb3c"></script>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$("#share-box").hide();
+			$("#share-btn").click(function () {
+				$("#share-box").toggle();
+				$('html,body').animate({scrollTop:0}, 'slow');
+			});
+			$("#mui-card-close").click(function () {
+				$("#share-box").hide();
+			});
+		});
+	</script>
+	
+	<div class="tuan-detail">
+		<div class="line banner">	
+			<img src="__ROOT__/attachs/<{$detail.photo}>">	
+			<div class="title">
+				<h1><{$shop.shop_name}></h1>
+				<p><{:bao_Msubstr($detail['intro'],0,48,false)}></p>
+			</div>	
+		</div>
+        
+        
+
+        
+		<div class="line price">
+			<div class="x7">
+				<span class="text-main padding-top"><em><{$detail.tuan_price}></em>元</span>  <del>￥<{$detail.price}></del>	
+			</div>
+			<div class="x5">    
+             <if condition="$detail['bg_date'] gt $today">
+             <a class="button button-block button-big bg-gray" href="javascript:void(0);">即将开抢</a>	
+             <else/>
+				<a class="button button-block button-big bg-yellow" href="<{:U('tuan/buy',array('tuan_id'=>$detail['tuan_id']))}>">立即购买</a>	
+             </if>
+			</div>
+            
+		</div>
+		<hr />
+		<div class="line info">
+			<div class="x6">
+				<span class="txt-border txt-little radius-circle border-green"><div class="txt radius-circle bg-green">退</div></span>
+				<span class="text-green">支持随时退款</span>
+			</div>
+			<div class="x6">
+				<span class="txt-border txt-little radius-circle border-gray"><div class="txt radius-circle bg-gray"><i class="icon-user"></i></div></span>
+				<span class="text-gray">已售 <{$detail.sold_num}> 份</span>
+			</div>
+            
+            <!--小灰灰增加开始-->
+            <div class="x6">
+            <if condition="$detail['freebook'] eq 1">
+            <span class="txt-border txt-little radius-circle border-green"><div class="txt radius-circle bg-green">预</div></span>
+			<span class="text-green">免预约</span>
+            <else />
+			<span class="txt-border txt-little radius-circle border-green"><div class="txt radius-circle bg-green">否</div></span>
+			<span class="text-green">需要预约哦~</span>
+                
+            </if>
+			</div>
+            <div class="x6">
+				<span class="txt-border txt-little radius-circle border-gray"><div class="txt radius-circle bg-gray">距</div></span>
+				<span class="text-gray"><{$detail.d}></span>
+			</div>
+           <!--小灰灰增加结束-->
+
+
+
+
+			<div class="x12 margin-top">
+				<span class="txt-border txt-little radius-circle border-dot"><div class="txt radius-circle bg-dot"><i class="icon-database"></i></div></span>
+				<span class="text-dot">该团购可以使用<{$detail.use_integral}>积分抵现！</span>
+			</div>
+		</div>
+		<hr />
+		<div class="blank-10 bg"></div>
+		<hr />
+		<div class="line status">
+			<div class="x7">
+				<span class="ui-starbar"><span style="width:<{:round($score*10,2)}>%"></span></span>
+			</div>
+			<div class="x5">
+				<span class="float-right margin-small-top"><{$pingnum}>人评价了该团购 <i class="icon-angle-right"></i></span>
+			</div>
+		</div>
+		<hr />
+		<div class="blank-10 bg"></div>
+		<hr />
+		<div class="line shop">
+			<div class="x9 border-right">
+				<h2> <a href="<{:U('shop/detail',array('shop_id'=>$detail['shop_id']))}>"><{$shop.shop_name}></a> <a  style="color:#F00; "href="<{:U('shop/gps',array('shop_id'=>$detail['shop_id']))}>"> （点击导航）</a></h2>
+				<p><{$shop.addr}></p>
+			</div>
+			<div class="x3">
+				<a class="tel" href="tel:<{$shop.tel}>"><i class="icon-phone text-main"></i></a>
+			</div>
+		</div>
+		<hr />
+		<div class="blank-10 bg"></div>
+		<hr />
+		<div class="line intro">
+			<h2>团购介绍</h2>
+			<div class="container">
+				<{$tuandetails.details}>
+			</div>
+		</div>
+		<hr />
+		<div class="blank-10 bg"></div>
+		<hr />
+		<div class="line intro">
+			<h2>团购须知</h2>
+			<div class="container">
+				<{$tuandetails.instructions}>
+			</div>
+		</div>
+		<hr />
+        
+        
+        
+         <div class="line intro" style="background:#f5f5f5;">
+			<h2>本店其他团购</h2>
+		</div>
+        
+        
+        <div class="line intro ">
+        
+        
+         <volist name="tuans" id="item" key="index">
+        <li class="x6" onclick="location='<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>'">
+        <div class="line banner">
+		
+			<img src="__ROOT__/attachs/<{$item.photo|default='default.jpg'}>">	
+			<div class="title1">
+				<h1><{:bao_msubstr($item['title'],0,8)}></h1>
+				<p>现价：<{:round($item['tuan_price']/100,2)}></span>&nbsp;&nbsp;<del>￥<{:round($item['price']/100,2)}></del></p>
+		
+			</div>
+        </div>
+        </li>
+        </volist>
+            
+   </div>
+        
+        
+        
+       
+       
+		<div class="blank-10 bg"></div>
+	</div>
+    
+ <style>
+ .mui-bar-tab {
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    table-layout: fixed;
+    border-top: 0;
+    border-bottom: 0;
+    -webkit-touch-callout: none;
+}.mui-bar {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    height: 44px;
+    border-bottom: 0;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.85);
+    box-shadow: 0 0 1px rgba(0,0,0,.85);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}.mui-bar-tab .mui-tab-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+}.mui-bar-tab .mui-tab-item .mui-icon {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+}.mui-bar .mui-icon {
+    font-size: 24px;
+    position: relative;
+    z-index: 20;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}.mui-icon {
+    font-family: Muiicons;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label{font-size:11px;display:block;overflow:hidden;text-overflow:ellipsis;  padding: 5px 0px;}.mui-bar-tab .mui-tab-item.mui-active {
+    color: #ff6600;
+}
+ </style>
+
+<nav class="mui-bar mui-bar-tab">
+    
+    		<a style="width: 16%;border-right: 1px solid #e0e0e0;" href="<{:U('mobile/index/index')}>" class="mui-tab-item ">
+			<span class="mui-icon">
+			<img style="width: 20px;height: 20px;" src="/static/default/wap/image/sy.png">
+			</span>
+			<span class="mui-tab-label">网站首页</span>
+		</a>
+        
+        <a style="width: 16%;border-right: 1px solid #e0e0e0;" href="<{:U('shop/gps',array('shop_id'=>$detail['shop_id']))}>" class="mui-tab-item ">
+			<span class="mui-icon">
+			<img style="width: 20px;height: 20px;" src="/static/default/wap/image/yjdh.png">
+			</span>
+			<span class="mui-tab-label">一键导航</span>
+		</a>
+        
+		<a style="width: 16%;border-right: 1px solid #e0e0e0;" href="tel:<{$shop.tel}>" class="mui-tab-item ">
+			<span class="mui-icon">
+			<img style="width: 20px;height: 20px;" src="/static/default/wap/image/yjth.png">
+			</span>
+			<span class="mui-tab-label">一键通话</span>
+		</a>
+			<a style="width: 16%;" href="http://wpa.qq.com/msgrd?v=3&uin=<{$shop.qq}>" class="mui-tab-item ">
+			<span class="mui-icon">
+			<img style="width: 20px;height: 20px;" src="/static/default/wap/image/qq.png">
+			</span>
+			<span class="mui-tab-label">QQ</span>
+		</a>
+
+
+
+<if condition="$detail['bg_date'] gt $today">
+<a style="width: 36%;background-color: #929292" href="javascript:void(0);" class="mui-tab-item mui-active">
+<span class="mui-tab-label" style="color: #fff;font-size: 20px;">即将开抢</span>
+</a>
+<else/>
+<a style="width: 36%;background-color: #ff3c3c" href="<{:U('tuan/buy',array('tuan_id'=>$detail['tuan_id']))}>" class="mui-tab-item mui-active">
+<span class="mui-tab-label" style="color: #fff;font-size: 20px;">立刻抢购</span>
+</a>
+</if>
+             
+             
+             
+		
+	</nav>
+	</body>
+</html>

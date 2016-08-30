@@ -1,0 +1,23 @@
+
+<include file='public:header'/>    
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('index/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			同城微店
+		</div>
+	</header>
+
+    <ul class="shop-list" id="shop-list"></ul>
+	<script>
+		$(document).ready(function () {
+			loaddata('<{$nextpage}>', $("#shop-list"), true);
+		});
+	</script>
+	<div class="mall-cart">
+		<a href="<{:U('mart/cart')}>">
+		<div class="round radius-circle bg-green"><div class="badge-corner"><i class="icon-shopping-cart"></i><span class="badge bg-red"><{$cartnum}></span></div></div>
+		</a>
+	</div>
+<include file="public:footer"/>

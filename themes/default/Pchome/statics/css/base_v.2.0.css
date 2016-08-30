@@ -1,0 +1,475 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+
+
+/* reset */
+
+
+input,select,textarea { font-size:100%; }
+
+address, cite, dfn, em, var, i { font-style:normal; }
+
+input, textarea, select { outline:none; border:none; background:none; }
+
+textarea { overflow: hidden; resize: none; }
+
+table { border-collapse:collapse; border-spacing:0;}
+
+th { text-align:inherit; }
+
+fieldset,img { border:0;}
+
+iframe { display:block; }
+
+ol,ul,li { list-style:none; }
+
+del { text-decoration:line-through; }
+
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:500;}
+
+sub, sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+
+sup { top:-0.5em; }
+
+sub { bottom:-0.25em; }
+
+ins,a { text-decoration:none; }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+
+audio,canvas,video { display:inline-block; *display:inline; *zoom:1; }
+
+abbr,acronym { border:0; font-variant:normal; }
+
+address,caption,cite,code,dfn,em,th,var { font-style:normal; font-weight:500; }
+
+body { color:#333; }
+
+a { color:#333;
+
+	-webkit-transition:all .2s;
+
+	   -moz-transition:all .2s;
+
+		-ms-transition:all .2s;
+
+			   transition:all .2s;
+
+}
+
+a:hover { color:#f60; }
+
+
+
+.clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; line-height:0; }
+
+.clearfix { zoom:1; /* for IE6 IE7 */}
+
+
+
+/* font */
+
+.f11 { font-size:11px!important; }
+
+.f12 { font-size:12px!important; }
+
+.f13 { font-size:13px!important; }
+
+.f14 { font-size:14px!important; }
+
+.f16 { font-size:16px!important; }
+
+.f18 { font-size:18px!important; }
+
+.f20 { font-size:20px!important; }
+
+.f24 { font-size:24px!important; }
+
+.fb  { font-weight:700!important; }
+
+.fn  { font-weight:400!important; }
+
+.t2  { text-indent:2em!important; }
+
+.lh100 { line-height:100%!important; }    /*12              ---行高是以字号来算的，字号变了会变*/
+
+.lh135 { line-height:135%!important; }    /*16*/
+
+.lh150 { line-height:150%!important; }    /*18*/
+
+.lh200 { line-height:200%!important; }    /*24*/
+
+.lh220 { line-height:220%!important; }    /*26*/
+
+.lh250 { line-height:250%!important; }    /*30*/
+
+.lh267 { line-height:267%!important; }    /*32*/
+
+.lh12 { line-height:12px!important; }    
+
+.lh14 { line-height:14px!important; }    
+
+.lh16 { line-height:16px!important; }    
+
+.lh18 { line-height:18px!important; }    
+
+.lh20 { line-height:20px!important; }    
+
+.lh22 { line-height:22px!important; }    
+
+.lh24 { line-height:24px!important; }   
+
+.lh26 { line-height:26px!important; }    
+
+.lh28 { line-height:28px!important; }   
+
+.lh30 { line-height:30px!important; }    
+
+.lh32 { line-height:32px!important; }    
+
+.unl    { text-decoration:underline!important; }
+
+.no_unl { text-decoration:none!important; }
+
+.ect {  
+
+    text-overflow: ellipsis;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* bg-color */
+
+.bgf5 { background-color: #f5f5f5!important; }
+
+.bg-black {
+
+    position: fixed; _position:absolute;
+
+    left: 0; top: 0; right: 0; bottom: 0;
+
+    width: 100%; height: 100%;
+
+    background-color: #000; 
+
+    opacity: .5; 
+
+    filter: alpha(opacity=50);
+
+    z-index: 1000;
+
+}
+
+.js-tip {
+
+    width: 100%; height: 30px;line-height: 30px;
+
+    background-color: #fffeee;
+
+    color: #666;
+
+}
+
+/* 图片效果 */
+
+.ad-hr:hover { opacity: .8; }
+
+
+
+/* font-color */
+
+.s-c000 { color: #000 !important; }
+
+.s-c333 { color: #333 !important; }
+
+.s-c666 { color: #666 !important; }
+
+.s-c999 { color: #999 !important; }
+
+.s-cf60 { color: #f60 !important; }
+
+.s-be { color:#297acc!important; }
+
+.s-oe { color:#f25618!important; }
+
+.s-ce52 { color: #e52a2a!important; }     
+
+ a.s-c000:hover, a.s-c333:hover, a.s-c666:hover, a.s-c999:hover, a.s-cf60:hover, a.s-be:hover, a.s-ce52:hover { color: #f60!important; }       
+
+
+
+ /*border*/
+
+ .borb0 {border-bottom: 0!important; }    
+
+ .borr0 {border-right: 0!important; }   
+
+  
+
+/* dingwei */
+
+.tl { text-align:left!important; }
+
+.tc { text-align:center; }
+
+.tc .ques-list{text-align:left;} /*专项问题*/
+
+.tr { text-align:right; }
+
+.ma { margin-left:auto; margin-right:auto; }
+
+.fl { float:left; } 
+
+.fr { float:right; }
+
+.cb { clear:both; }
+
+.cl { clear:left; }
+
+.cr { clear:right; }
+
+.vm { vertical-align:middle; }
+
+.pr { position:relative; }
+
+.pa { position:absolute; }
+
+.zoom { zoom:1; }
+
+.vhn { visibility:hidden; }
+
+.ohn { overflow: hidden; }
+
+.none { display:none!important; }
+
+.block { display:block!important; }
+
+
+
+/* width 、height */
+
+.wc	  { width:100%!important; }	/* width-centum */
+
+.w1200 { width:1200px; }
+
+.w1000 { width:1000px; }
+
+.w-mn { min-width: 1000px; max-width: 1200px; _width: 1000px; }
+
+.w990 { width:1200px; }
+
+.w680 { width:680px; }
+
+.w690 { width:690px; }
+
+
+
+.hc { height:100%; } 
+
+.ha { height:auto!important; }
+
+
+
+/* margin、padding */
+
+.m10 { margin:10px!important; }
+
+.m15 { margin:15px!important; }
+
+.m20 { margin:20px!important; }
+
+.m30 { margin:30px!important; }
+
+.m40 { margin:40px!important; }
+
+.m50 { margin:50px!important; }
+
+.mt0  { margin-top:0!important; }
+
+.mt5  { margin-top:5px!important; }
+
+.mt10 { margin-top:10px!important; }
+
+.mt15 { margin-top:15px!important; }
+
+.mt20 { margin-top:0px!important; }
+
+.mt30 { margin-top:30px!important; }
+
+.mt40 { margin-top:40px!important; }
+
+.mt50 { margin-top:50px!important; }
+
+.mt100{ margin-top:100px; }
+
+.mb0  { margin-bottom:0!important; }
+
+.mb5  { margin-bottom:5px!important; }
+
+.mb10 { margin-bottom:10px!important; }
+
+.mb15 { margin-bottom:18px!important; }
+
+.mb20 { margin-bottom:20px!important; }
+
+.mb30 { margin-bottom:30px!important; }
+
+.mb40 { margin-bottom:40px!important; }
+
+.mb50 { margin-bottom:30px!important; }
+
+.mb100{ margin-bottom:100px; }
+
+.ml5  { margin-left:5px!important; }
+
+.ml10 { margin-left:10px!important; }
+
+.ml15 { margin-left:15px!important; }
+
+.ml20 { margin-left:20px!important; }
+
+.ml30 { margin-left:30px!important; }
+
+.ml40 { margin-left:40px!important; }
+
+.ml50 { margin-left:50px!important; }
+
+.ml100{ margin-left:100px; }
+
+.mr0 { margin:0!important; }
+
+.mr5  { margin-right:5px!important; }
+
+.mr10 { margin-right:10px!important; }
+
+.mr15 { margin-right:15px!important; }
+
+.mr20 { margin-right:20px!important; }
+
+.mr30 { margin-right:30px!important; }
+
+.mr40 { margin-right:40px!important; }
+
+.mr50 { margin-right:50px!important; }
+
+.mr100{ margin-right:100px; }
+
+.p10 { padding:10px!important; }
+
+.p15 { padding:15px!important; }
+
+.p20 { padding:20px!important; }
+
+.p30 { padding:30px!important; }
+
+.p40 { padding:40px!important; }
+
+.p50 { padding:50px!important; }
+
+.pt0{ padding-top:0!important; }
+
+.pt5 { padding-top:5px!important; }
+
+.pt10 { padding-top:10px!important; }
+
+.pt15 { padding-top:15px!important; }
+
+.pt20 { padding-top:20px!important; }
+
+.pt30 { padding-top:30px!important; }
+
+.pt40 { padding-top:40px!important; }
+
+.pt50 { padding-top:50px!important; }
+
+.pt100{ padding-top:100px!important; }
+
+.pb0  { padding-bottom:0!important; }
+
+.pb5  { padding-bottom:5px!important; }
+
+.pb10 { padding-bottom:10px!important; }
+
+.pb15 { padding-bottom:15px!important; }
+
+.pb20 { padding-bottom:20px!important; }
+
+.pb30 { padding-bottom:30px!important; }
+
+.pb40 { padding-bottom:40px!important; }
+
+.pb50 { padding-bottom:50px!important; }
+
+.pb100{ padding-bottom:100px!important; }
+
+.pl5  { padding-left:5px!important; }
+
+.pl10 { padding-left:10px!important; }
+
+.pl15 { padding-left:15px!important; }
+
+.pl20 { padding-left:20px!important; }
+
+.pl30 { padding-left:30px!important; }
+
+.pl40 { padding-left:40px!important; }
+
+.pl50 { padding-left:50px!important; }
+
+.pl100{ padding-left:100px!important; }
+
+.pr5  { padding-right:5px!important; }
+
+.pr10 { padding-right:10px!important; }
+
+.pr15 { padding-right:15px!important; }
+
+.pr20 { padding-right:20px!important; }
+
+.pr30 { padding-right:30px!important; }
+
+.pr40 { padding-right:40px!important; }
+
+.pr50 { padding-right:50px!important; }
+
+.pr100{ padding-right:100px!important; }
+
+
+
+ /* 层次*/
+
+.z-11 { z-index: 11; }
+
+.z-10 { z-index: 10; }
+
+.z-9 { z-index: 9; }
+
+.z-8 { z-index: 8; }
+
+.z-7 { z-index: 7; }
+
+.z-6 { z-index: 6; }
+
+.z-5 { z-index: 5; }
+
+.z-4 { z-index: 4; }
+
+.z-3 { z-index: 3; }
+
+.z-2 { z-index: 2; }
+
+.z-1 { z-index: 1; }
+
+
+
+
+
+
+

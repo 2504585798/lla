@@ -1,0 +1,330 @@
+<div class="btnList-all">
+    <p class="list-tit">项目分类</p>
+
+    <div class="btnCont">
+      <ul class="btnItem1">
+        <li class="jingxuan"><i></i><span><a href="" target="_blank">精选</a></span></li>
+        <li class="eye"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[0]['cate_id']))}>" target="_blank"><{$itemcate0[0]['cate_name']}></a></span></li>
+        <li class="nose"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[1]['cate_id']))}>" target="_blank"><{$itemcate0[1]['cate_name']}></a></span></li>
+        <li class="body"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[2]['cate_id']))}>" target="_blank"><{$itemcate0[2]['cate_name']}></a></span>
+        </li>
+        <li class="fnbeauty"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[3]['cate_id']))}>" target="_blank"><{$itemcate0[3]['cate_name']}></a></span>
+        </li>
+        <li class="face"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[4]['cate_id']))}>" target="_blank"><{$itemcate0[4]['cate_name']}></a></span>
+        </li>
+        <li class="chest"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[5]['cate_id']))}>" target="_blank"><{$itemcate0[5]['cate_name']}></a></span>
+        </li>
+        <li class="facialwrinkles"><i></i><span><a href="<{:U('item/index',array(cate_id=>$itemcate0[6]['cate_id']))}>" target="_blank"><{$itemcate0[6]['cate_name']}></a></span></li>
+      </ul>
+    </div>
+    <div class="infoShowCont">
+      <ul class="btnItem2">
+        <li class="jingxuan clearfix" style="display:none">
+          <a href="" target="_blank">限时特价</a>
+          <a href="" target="_blank">割双眼皮</a>
+          <a href="" target="_blank">瘦脸</a>
+          <a href="" target="_blank">丰苹果肌</a>
+          <a href="" target="_blank">垫下巴</a>
+          <a href="" target="_blank">垫下巴</a>
+          <a href="" target="_blank">隆胸</a>
+          <a href="" target="_blank">隆鼻</a>
+          <a href="" target="_blank">减肥</a>
+          <a href="" target="_blank">抗衰老 · 年轻化</a>
+          <a href="" target="_blank">微整形</a>
+          <a href="" target="_blank">热玛吉</a>
+        </li>
+		<foreach  name="itemcates"  item="item">
+		<eq  name="item.parent_id"  value="0">
+        <li class="otherPart">
+          <div class="linkCont">
+		  <foreach  name="itemcates"  item="item2">
+		 <eq  name="item2.parent_id"  value="$item.cate_id">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="<{:U('item/index',array(cate_id=>$item2['cate_id']))}>"><{$item2.cate_name}></a>
+              </div>
+              <div class="item2 left">
+			   <foreach  name="itemcates"  item="item3">
+		    <eq  name="item3.parent_id"  value="$item2.cate_id">
+                <a target="_blank" href="<{:U('item/index',array(cate_id=>$item3['cate_id']))}>"><{$item3.cate_name}></a>
+              <!--   <a target="_blank" href="">埋线双眼皮</a>
+                <a target="_blank" href="">韩式双眼皮</a> -->
+				</eq>
+			 </foreach>
+              </div>
+              <a target="_blank" href="<{:U('item/index',array(cate_id=>$item2['cate_id']))}>" class="item3 left">更多</a>
+            </div>
+			</eq>
+			 </foreach>
+          <!--   <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">去眼袋</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">内切去眼袋</a>
+                <a target="_blank" href="">激光去眼袋</a>
+                <a target="_blank" href="">外切去眼袋</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div> -->
+          </div>
+        </li>
+		</eq>
+		</foreach>
+       <!--  <li class="otherPart">
+          <div class="linkCont">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">隆鼻</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">膨体隆鼻</a>
+                <a target="_blank" href="">玻尿酸隆鼻</a>
+                <a target="_blank" href="">自体脂肪隆鼻</a>
+                <a target="_blank" href="">硅胶假体隆鼻</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+          </div>
+        </li>
+        <li class="otherPart">
+          <div class="linkCont">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">瘦小腿</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">瘦腿针</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">瘦大腿</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">水动力吸脂瘦大腿</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">瘦手臂（蝴蝶袖）</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">水动力吸脂瘦手臂</a>
+                <a target="_blank" href="">传统吸脂瘦手臂</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+          </div>
+        </li>
+        <li class="otherPart">
+          <div class="linkCont">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">美白</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">美白针</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">嫩肤</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">果酸嫩肤</a>
+                <a target="_blank" href="">光子嫩肤</a>
+                <a target="_blank" href="">水氧嫩肤</a>
+                <a target="_blank" href="">水光针</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+          </div>
+        </li>
+        <li class="otherPart">
+          <div class="linkCont">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">瘦脸</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">瘦脸针</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">垫下巴</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">膨体垫下巴</a>
+                <a target="_blank" href="">玻尿酸垫下巴</a>
+                <a target="_blank" href="">硅胶垫下巴</a>
+                <a target="_blank" href="">自体脂肪填充下巴</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">丰太阳穴</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">自体脂肪丰太阳穴</a>
+                <a target="_blank" href="">玻尿酸丰太阳穴</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">丰额头</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">自体脂肪丰额头</a>
+                <a target="_blank" href="">玻尿酸丰额头</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">丰面颊</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">自体脂肪丰面颊</a>
+                <a target="_blank" href="">玻尿酸丰面颊</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">填泪沟</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">玻尿酸填泪沟</a>
+                <a target="_blank" href="">自体脂肪填泪沟</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">丰苹果肌</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">自体脂肪丰苹果肌</a>
+                <a target="_blank" href="">玻尿酸丰苹果肌</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">多部位面部填充</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">自体脂肪面部填充（多个部位）</a>
+                <a target="_blank" href="">玻尿酸面部填充（多个部位）</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+          </div>
+        </li>
+        <li class="otherPart">
+          <div class="linkCont">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">隆胸</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">假体隆胸</a>
+                <a target="_blank" href="">自体脂肪隆胸</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+          </div>
+        </li>
+        <li class="otherPart">
+          <div class="linkCont">
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">去法令纹</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">自体脂肪去法令纹</a>
+                <a target="_blank" href="">玻尿酸去法令纹</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+            <div class="linkItem">
+              <div class="item1 left">
+                <a target="_blank" href="">去颈纹</a>
+              </div>
+              <div class="item2 left">
+                <a target="_blank" href="">颈部超声刀</a>
+              </div>
+              <a target="_blank" href="" class="item3 left">更多</a>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+      <!--如果没有推荐的专题，依旧保留li，此处对应左侧部位显示-->
+      <!--
+      <ul class="fastZT fastZT2">
+          <li style="display:block"></li>
+      </ul>
+      -->
+    </div>
+  </div>
+
+
+
+
+
+<!-- <div class="menu_fllist2">
+    <php>$i=0;</php>             
+    <foreach name="itemcates" item="item">
+        <eq name="item.parent_id" value="0"> 
+        <php>$i++;if($i <= 10){</php>
+        <div <if condition="$i == 1">class="item2 bo"<else/>class="item2"</if> >
+            <h3>
+                <div class="left"><span>&nbsp;</span><a class="menu_flt" title="<{$item.cate_name}>" target="_blank" href="<{:U('item/index',array('cat'=>$item['cate_id']))}>"><{:msubstr($item['cate_name'],0,8,'utf-8',false)}></a></div>
+             
+            </h3>
+            <div style="height: 320px;" class="menu_flklist2">
+                <foreach name="itemcates" item="item2">
+                 <eq name="item2.parent_id" value="$item.cate_id"> 
+                <div class="menu_fl2t"><a title="<{$item2.cate_name}>" target="_blank" href="<{:U('item/index',array('cat'=>$item2['cate_id']))}>"><{$item2.cate_name}></a></div>
+                
+                <div class="menu_fl2nr">
+                    <ul>
+                   
+                        <php>$k=0;</php>
+                        <foreach name="itemcates" item="item3">
+                            <eq name="item3.parent_id" value="$item2.cate_id"> 
+                            <php>$k++;</php>
+                            <if condition="$k%16 eq 1">
+                                <li class="menu_fl2nrli">
+                                    <ul> 
+                                        <li><a title="<{$item3.cate_name}>" target="_blank" href="<{:U('item/index',array('cat'=>$item3['cate_id'],'cate_id'=>$item3['cate_id']))}>"><{$item3['cate_name']}></a></li>
+                                        <elseif condition="$k%16 eq 0"/>
+                                        <li><a title="<{$item3.cate_name}>" target="_blank" href="<{:U('item/index',array('cat'=>$item3['cate_id'],'cate_id'=>$item3['cate_id']))}>"><{$item3['cate_name']}></a></li>
+                                    </ul>
+                                </li>
+                                <else/>
+                                <li><a title="<{$item3.cate_name}>" target="_blank" href="<{:U('item/index',array('cat'=>$item3['cate_id'],'cate_id'=>$item3['cate_id']))}>"><{$item3['cate_name']}></a></li>
+                            </if>
+                            </eq>
+                        </foreach>
+                       
+                    </ul>
+                </div>
+                </eq>
+                </foreach>
+                
+            </div>
+        </div>
+        <php>}</php>
+        </eq>
+    </foreach>
+</div>
+ -->

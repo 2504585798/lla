@@ -1,0 +1,268 @@
+<include file='public:header'/>    
+	<script src="/static/default/wap/other/roll.js"></script>
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('index/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			<{$detail.name}>
+		</div>
+		<div class="top-share">
+			<a href="<{:U('community/index',array('change'=>1))}>" id="cate-btn"><i class="icon-refresh"></i></a>
+		</div>
+	</header>
+
+	
+	<div id="roll" class="xiaoqu-roll">	
+		<div class="bd">
+			<ul>
+				<calldata mdl="Ad" where="closed=0 AND site_id=330  and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,5" cache="43200" order="orderby asc">
+				<li> 	
+					<a href="<{$item.link_url}>" target="_blank" ><img src="__ROOT__/attachs/<{$item.photo}>" /></a>
+				</li>
+				<li> 	
+					<a href="<{$item.link_url}>" target="_blank" ><img src="__ROOT__/attachs/<{$item.photo}>" /></a>
+				</li>	
+				</calldata>	
+			</ul>
+			<div class="hd">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+    
+    	
+<div class="xiaoqu-nav line"   >	<img  style="width:100%" src="__ROOT__/attachs/<{$detail[pic]}>" alt="<{$detail.name}>" /></div>
+
+
+
+	<div class="cite-title padding border-bottom">
+		<h5><i class="icon-building"></i>  我的小区</h5>
+	</div>
+	<div class="xiaoqu-nav line">
+		<div class="x3 border-right">
+           <a href="mcenter/charge/index">
+    			<img src="/static/default/wap/image/index/app-game.png" />
+    			<p>物业缴费</p>
+    		</a>
+		</div>
+		<div class="x3 border-right">
+    		<a href="###################">
+    			<img src="/static/default/wap/image/index/app-extend.png" />
+    			<p>代收快递</p>
+    		</a>
+		</div>
+		<div class="x3 border-right">
+			<a href="###################">
+    			<img src="/static/default/wap/image/index/app-life.png" />
+    			<p>分类信息</p>
+    		</a>
+		</div>
+		<div class="x3">
+    		<a href="<{:U('market/index')}>">
+    			<img src="/static/default/wap/image/index/app-market.png" />
+    			<p>周边商场</p>
+    		</a> 
+		</div>
+		<div class="x3 border-right">
+    		<a href="<{:U('community/contact',array('community_id'=>$detail['community_id']))}>">
+				<img src="/static/default/wap/image/community/admin.png" />
+    			<p>联系物业</p>
+    		</a> 
+		</div>
+		<div class="x3 border-right">
+    		<a href="<{:U('community/neighbor',array('community_id'=>$detail['community_id']))}>">
+				<img src="/static/default/wap/image/community/users.png" />
+    			<p>我的邻居</p>
+    		</a> 
+		</div>
+		<div class="x3 border-right">
+			<a href="<{:U('market/index')}>">
+    			<img src="/static/default/wap/image/index/app-market.png" />
+    			<p>周边商场</p>
+    		</a> 
+		</div>
+		<div class="x3">
+    		<a href="<{:U('community/feedback',array('community_id'=>$detail['community_id']))}>">
+				<img src="/static/default/wap/image/community/feed.png" />
+    			<p>物业反馈</p>
+    		</a> 
+		</div>
+        <!--新加的开始-->
+        
+        
+		<div class="x3 border-right">
+    		<a href="<{:U('housekeeping/main')}>">
+    			<img src="/static/default/wap/image/index/app-housekeeping.png" />
+    			<p>小区家政</p>
+    		</a>
+		</div>
+		<div class="x3 border-right">
+			<a href="<{:U('community/tieba',array('community_id'=>$detail['community_id']))}>">
+    			<img src="/static/default/wap/image/index/app-tieba.png" />
+    			<p>小区论坛</p>
+    		</a>
+		</div>
+        <div class="x3 border-right">
+           <a href="<{:U('tuan/main')}>">
+    			<img src="/static/default/wap/image/index/app-tuan.png" />
+    			<p>小区团购</p>
+    		</a>
+		</div>
+        
+		<div class="x3">
+        <if condition="$isjoin neq 0">
+    		<a href="<{:U('community/out',array('community_id'=>$detail['community_id']))}>">
+				<img src="/static/default/wap/image/community/exit.png" />
+    			<p>撤离小区</p>
+    		</a> 
+			<else />
+    		<a href="<{:U('community/join',array('community_id'=>$detail['community_id']))}>">
+				<img src="/static/default/wap/image/community/plus.png" />
+    			<p>入驻小区</p>
+    		</a> 
+			</if>
+    		
+		</div>
+        
+        
+        <!--新加的结束-->
+	</div>
+	
+	<div class="blank-10 bg"></div>
+	<div class="cite-title padding border-bottom">
+		<h5><i class="icon-bullhorn"></i> 物业通知</h5>
+		<a href="<{:U('community/newslist',array('community_id'=>$detail['community_id']))}>">+ 更多</a>
+	</div>
+	<div class="text-list">
+		<ul>
+			<foreach name="news" item="item">
+			<li class="padding border-bottom">
+				<a href="<{:U('community/news',array('news_id'=>$item['news_id']))}>"><{:bao_Msubstr($item['title'],0,14,false)}><span><{$item.create_time|date='Y-m-d',###}></span></a>
+			</li>
+			</foreach>
+		</ul>
+	</div>
+	<div class="blank-10 bg"></div>
+		
+	<div class="cite-title padding border-bottom">
+		<h5><i class="icon-phone"></i>  便民电话</h5>
+		<a href="<{:U('community/together',array('community_id'=>$detail['community_id']))}>">+ 合作</a>
+	</div>
+	<div class="text-list">
+		<ul>
+			<volist name="phones" id="var" key="index">
+			<li class="padding border-bottom">
+				<a class="line" title="<{$var.name}>" href="tel:<{$var.phone}>">
+					<em class="x4"><{:bao_Msubstr($var['name'],0,4,false)}></em>
+					<em class="x8"><{$var.phone}> <span><i class="icon-angle-right"></i></span></em>
+				</a> 
+			</li>
+			</volist>
+		</ul>
+	</div>
+	<div class="blank-10 bg"></div>
+	<div class="cite-title padding border-bottom">
+		<h5><i class="icon-fire"></i>  身边抢购</h5>
+		<a href="javascript:void(0);" onclick="refresh();"><i class="icon-refresh"></i> 换一换</a>
+	</div>
+	<div class="mart-flush" id="flush">
+		<div class="bd">
+			<ul>
+				<volist name="keys" id="k">
+					<li class="padding">
+						<a class="line" href="<{:U('tuan/detail',array('tuan_id'=>$tuan[$k]['tuan_id']))}>">
+							<div class="x5"><img src="/attachs/<{$tuan[$k]['photo']}>"></div>
+							<div class="x7">
+								<p><{$tuan[$k]['title']}></p>
+								<p>
+								<span class="text-yellow margin-right">￥<{:round($tuan[$k]['tuan_price']/100,2)}></span>
+								<del class="text-gray text-small">￥<{:round($tuan[$k]['price']/100,2)}></del>
+								</p>
+							</div>
+						</a>
+					</li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+	<div class="blank-10 bg"></div>
+	
+	<div class="cite-title padding border-bottom">
+		<h5><i class="icon-user"></i>  附近商家</h5>
+		<a href="<{:U('near/index')}>">+ 更多</a>
+	</div>
+	<div class="xiaoqu-nav line">
+		<div class="x3 border-right">
+           <a href="<{:U('community/near',array('community_id'=>$detail['community_id'],'keyword'=>'超市'))}>">
+    			<img src="/static/default/wap/image/community/shop.png" />
+    			<p>附近超市</p>
+    		</a>
+		</div>
+		<div class="x3 border-right">
+    		<a href="<{:U('community/near',array('community_id'=>$detail['community_id'],'keyword'=>'美食'))}>">
+    			<img src="/static/default/wap/image/community/food.png" />
+    			<p>附近美食</p>
+    		</a>
+		</div>
+		<div class="x3 border-right">
+			<a href="<{:U('community/near',array('community_id'=>$detail['community_id'],'keyword'=>'家居'))}>">
+    			<img src="/static/default/wap/image/community/home.png" />
+    			<p>附近家居</p>
+    		</a>
+		</div>
+		<div class="x3">
+    		<a href="<{:U('community/near',array('community_id'=>$detail['community_id'],'keyword'=>'维修'))}>">
+    			<img src="/static/default/wap/image/community/repair.png" />
+    			<p>附近维修</p>
+    		</a> 
+		</div>
+	</div>
+	
+	
+
+	<script>	
+		$(document).ready(function () {
+			TouchSlide({ 
+				slideCell:"#roll",
+				titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell:".bd ul", 
+				effect:"left", 
+				autoPlay:false,//自动播放
+				autoPage:true, //自动分页
+			});
+			TouchSlide({ 
+				slideCell:"#flush",
+				mainCell:".bd ul", 
+				effect:"left", 
+				autoPlay:false,//自动播放
+				autoPage:false, //自动分页
+			});
+			
+			$(document).ready(function () {
+				loaddata('<{$nextpage}>', $("#tie-list ul"), true);
+			});
+
+		});
+		
+		function refresh(){
+			var width = $('#flush .bd li').width() + 20;
+			var offset = 0 -( Math.ceil(Math.random()*9) * width );
+			var css = "translateX("+offset+"px)";
+			$('#flush .bd ul').css("transform",css);
+		}
+
+	</script>
+		
+
+	<div class="blank-10 bg"></div>
+	<div class="cite-title padding border-bottom">
+		<h5><i class="icon-comments"></i> 小区贴吧</h5>
+		<a href="<{:U('community/tieba',array('community_id'=>$detail['community_id']))}>">+ 进入</a>
+	</div>
+	<div id="tie-list" class="text-list">
+		<ul>
+		</ul>
+	</div>
+
+<include  file='public:footer'/>    

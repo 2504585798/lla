@@ -1,0 +1,487 @@
+<include file="public:header" /> <!---------头部声明--------->
+<include file="public:top"/><!-------------头部认证，注册登录，-------------------->
+<script src="__TMPL__statics/js/common_head.js?v=20160718"></script>
+<include file="public:navitem"/><!------------导航+分类------------------------->
+<link rel="stylesheet" href="__TMPL__statics/css/style-cp-hd.css" />
+<script type="text/javascript" language="javascript" src="__PUBLIC__/js/layer/layer.js"></script>
+ <script type="text/javascript" src="__TMPL__statics/js/posfixed.js" charset="utf-8"></script>
+<script>
+    $(function () {
+        $('#selectBoxInput').click(function () {
+            $('.selectList').toggle(300);
+        });
+        $(".selectList li a").click(function () {
+            $("#selectBoxInput").html($(this).html());
+            $('.selectList').hide();
+        });
+    });//头部搜索框js
+    $(function () {
+        $('.sy_flsxAll').click(function () {
+            $('.sy_flsxAllList').toggle();
+        });
+    });
+</script>
+
+<div class="cpDWrap">
+	<div class="cpD-01">
+		<div class="cpD-01L fl">
+			<div class="cpD-01L-l fl">
+				<span><img src="__ROOT__/attachs/<{$detail.photo}>" width="400" height="400" id="preview"></span>
+				<ul class="xiaotu">
+				       <php>$i=0;</php>
+                            <foreach name="thumb" item="item">
+                                <php>$i++;if($i<=3){</php>
+					<li data="__ROOT__/attachs/<{$item}>"><a href="#"><img src="__ROOT__/attachs/<{$item}>"></a></li>
+					
+					      <php>}</php>
+                            </foreach>
+					
+					<!-- <li data="__TMPL__statics/images/cqD-tu.png"><a href="#"><img src="__TMPL__statics/images/cpD-xtu.png"></a></li>
+					<li data="__TMPL__statics/images/cqD-tu.png"><a href="#"><img src="__TMPL__statics/images/cpD-xtu.png"></a></li>
+					<li data="__TMPL__statics/images/cqD-tu.png"><a href="#"><img src="__TMPL__statics/images/cpD-xtu.png"></a></li> -->
+				</ul>
+				<p>
+					<a   class="cang fl">收藏宝贝（35613人气）</a>
+				
+					<b class="fl">|</b>
+					<div data-bd-bind="1465208935192" class="share bdsharebuttonbox spxq_qgFx bdshare-button-style0-16" data-tag="share_1">
+					<a class="spxq_qgFxA  share fl" data-cmd="more" href="javascript:void(0);"><em>&nbsp;</em>分享到</a></div>
+					
+			 <script>
+			 window._bd_share_config = {share: [{"tag": "share_1", 'bdCustomStyle': '__TMPL__statics/empty.css'}]};with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+				</p>
+			</div>
+			<div class="cpD-01L-r fr">
+				<h3>【自体脂肪隆胸】手动抽脂，永久丰胸，安全自然</h3>
+				<div class="cpD-01L-r-01">
+					<p>项目:<span>自体脂肪隆胸</span></p>
+					<p>医院:<span>韩国原辰整形外科医院</span>医生:<span>朴龙俊</span></p>
+				</div>
+				<div class="cpD-01L-price">
+					<div class="cpD-01L-priceL fl">
+						<p class="price01">价格：￥<del>79.00</del></p>
+						<p>预约价：<b>￥49.00</b></p>
+					</div>
+					<div class="cpD-01L-priceR fr">
+						<ul>
+							<li>
+								<b>1941</b>
+								<p>整形日记</p>
+							</li>
+							<span></span>
+							<li>
+								<b>1941</b>
+								<p>整形日记</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cpD-01L-btn">
+					<a class="cpD-mai" href="<{:U('item/buy',array('item_id'=>$detail['item_id']))}>">立即购买</a>
+					<a href="#">前往活动价格</a>
+				</div>
+				<div class="cpD-01L-text">
+					<p>承诺保证： </p>
+					<p>支持服务：<a href="#">手术视频　</a><a href="#">保险　</a><a href="#">分期</a></p>
+					<p>预约有效期12个月</p>
+				</div>
+			</div>
+		</div>
+		<div class="cpD-01R fr">
+			<div class="cpD-01R-t">
+				<p><a href="#"><img src="__TMPL__statics/images/cpD-btn.png"></a></p>
+				<ul>
+					<li><a href="#">进入医院主页</a></li>
+					<li><a href="#">收藏医院主页</a></li>
+				</ul>
+			</div>
+			<div class="cpD-01R-b">
+				<div class="cpD-01R-bt">
+					<h3 class="fl">逛了又逛</h3>
+					<a href="#" class="fr"><img src="__TMPL__statics/images/xq-tu2.png"></a>
+				</div>
+				<div class="cpD-01R-bb">
+					<ul>
+						<li><a href="#">
+							<span><img src="__TMPL__statics/images/cpDetail-tu.png"></span>
+							<p>￥55.00</p>
+						</a></li>
+						<li><a href="#">
+							<span><img src="__TMPL__statics/images/cpDetail-tu.png"></span>
+							<p>￥55.00</p>
+						</a></li>
+						<li><a href="#">
+							<span><img src="__TMPL__statics/images/cpDetail-tu.png"></span>
+							<p>￥55.00</p>
+						</a></li>
+						<li><a href="#">
+							<span><img src="__TMPL__statics/images/cpDetail-tu.png"></span>
+							<p>￥55.00</p>
+						</a></li>
+						<li><a href="#">
+							<span><img src="__TMPL__statics/images/cpDetail-tu.png"></span>
+							<p>￥55.00</p>
+						</a></li>
+						<li><a href="#">
+							<span><img src="__TMPL__statics/images/cpDetail-tu.png"></span>
+							<p>￥55.00</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cpD-02">
+		<div class="cpD-02T"><span>医院推荐</span></div>
+		<div class="cpD-02B">
+			<ul>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cpD-02-tu.png">
+					<h3>韩国代购innisfree悦诗韩国代购innisfree悦诗</h3>
+					<p><span>￥<b>65</b></span><del>￥70</del></p>
+				</a></li>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cpD-02-tu.png">
+					<h3>韩国代购innisfree悦诗韩国代购innisfree悦诗</h3>
+					<p><span>￥<b>65</b></span><del>￥70</del></p>
+				</a></li>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cpD-02-tu.png">
+					<h3>韩国代购innisfree悦诗韩国代购innisfree悦诗</h3>
+					<p><span>￥<b>65</b></span><del>￥70</del></p>
+				</a></li>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cpD-02-tu.png">
+					<h3>韩国代购innisfree悦诗韩国代购innisfree悦诗</h3>
+					<p><span>￥<b>65</b></span><del>￥70</del></p>
+				</a></li>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cpD-02-tu.png">
+					<h3>韩国代购innisfree悦诗韩国代购innisfree悦诗</h3>
+					<p><span>￥<b>65</b></span><del>￥70</del></p>
+				</a></li>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cpD-02-tu.png">
+					<h3>韩国代购innisfree悦诗韩国代购innisfree悦诗</h3>
+					<p><span>￥<b>65</b></span><del>￥70</del></p>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="cpD-03">
+		<div class="cpD-03L fl">
+			<h3>医院其他产品</h3>
+			<ul>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cp-03-tu1.png">
+					<h3>【超声刀】北京金凤凰医院超声凤凰医院超声刀</h3>
+					<div class="cp-sz">
+						<p class="fl">
+							<span class="fl"><img src="__TMPL__statics/images/sz-bg01.png"></span>
+							<b class="fl">￥2100</b>
+							<span class="fl"><img src="__TMPL__statics/images/sz-bg03.png"></span>
+						</p>
+						<del class="fr">原价：6800元</del>
+					</div>
+				</a></li>
+				<li><a href="#">
+					<img src="__TMPL__statics/images/cp-03-tu1.png">
+					<h3>【超声刀】北京金凤凰医院超声凤凰医院超声刀</h3>
+					<div class="cp-sz">
+						<p class="fl">
+							<span class="fl"><img src="__TMPL__statics/images/sz-bg01.png"></span>
+							<b class="fl">￥2100</b>
+							<span class="fl"><img src="__TMPL__statics/images/sz-bg03.png"></span>
+						</p>
+						<del class="fr">原价：6800元</del>
+					</div>
+				</a></li>
+			</ul>
+			<a href="#" class="cp-more fr">更多>></a>
+		</div>
+		<div class="cpD-03R fr">
+			<div class="cpD-03R-001" id="gd1">
+				<div class="cpD-03RT">
+					<span class="spanCur">产品详情</span>
+					<span>用户评价<b>81</b></span>
+					<span>成交记录<b>395</b></span>
+				</div>
+				<img src="__TMPL__statics/images/cpD03-tu1.png">
+				<img src="__TMPL__statics/images/cpD03-tu2.png">
+				<img src="__TMPL__statics/images/cpD03-tu3.png">
+			</div>
+
+			<div class="cpD-03R-002" id="gd2">
+				<div class="cpD-pj">
+					<div class="cpD-pjT">
+						<span>用户评价81</span>
+					</div>
+					<div class="cpD-pjB">
+						<div class="cpD-pjB-01">
+							<div class="cpD-pjB-01L fl">
+								<p>用户评分</p>
+								<b>4</b>
+							</div>
+							<div class="cpD-pjB-01M fl">
+								<p>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+								</p>
+								<p>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+								</p>
+								<p>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+								</p>
+								<p>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+								</p>
+								<p>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star01.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span style="float:left;" ><img src="__TMPL__statics/images/star02.png"></span>
+								</p>
+								<p>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+									<span  style="float:left;"><img src="__TMPL__statics/images/star02.png"></span>
+								</p>
+							</div>
+							<div class="cpD-pjB-01R fl">
+								<div class="cpD-jdt">
+									<h3 class="fl">63%</h3>
+									<p class="fl"><b></b></p>
+								</div>
+								<div class="cpD-jdt">
+									<h3 class="fl">63%</h3>
+									<p class="fl"><b></b></p>
+								</div>
+								<div class="cpD-jdt">
+									<h3 class="fl">63%</h3>
+									<p class="fl"><b></b></p>
+								</div>
+								<div class="cpD-jdt">
+									<h3 class="fl">63%</h3>
+									<p class="fl"><b></b></p>
+								</div>
+								<div class="cpD-jdt">
+									<h3 class="fl">63%</h3>
+									<p class="fl"><b></b></p>
+								</div>
+							</div>
+						</div>
+						<div class="cpD-pjB-02">
+							<div class="cpD-pjB-02L fl">
+								<span><img src="__TMPL__statics/images/02-tu1.png"></span>
+								<p>xxd1229</p>
+							</div>
+							<div class="cpD-pjB-02R fl">
+								<p>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+								</p>
+								<div class="cpD-pjText">文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+								<ul>
+									<li><img src="__TMPL__statics/images/02-tu2.png"></li>
+									<li><img src="__TMPL__statics/images/02-tu2.png"></li>
+									<li><img src="__TMPL__statics/images/02-tu2.png"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cpD-pjB-02">
+							<div class="cpD-pjB-02L fl">
+								<span><img src="__TMPL__statics/images/02-tu1.png"></span>
+								<p>xxd1229</p>
+							</div>
+							<div class="cpD-pjB-02R fl">
+								<p>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+									<span><img src="__TMPL__statics/images/star01.png"></span>
+								</p>
+								<div class="cpD-pjText">文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+								<ul>
+									<li><img src="__TMPL__statics/images/02-tu2.png"></li>
+									<li><img src="__TMPL__statics/images/02-tu2.png"></li>
+									<li><img src="__TMPL__statics/images/02-tu2.png"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page">
+					<ul>
+						<li class="pageCur"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><a href="#">9</a></li>
+						<li><a href="#">10</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cpD-03R-002" id="gd3">
+				<div class="cpD-pj">
+					<div class="cpD-pjT">
+						<span>月成交记录395</span>
+					</div>
+					<div class="cpD-pjB">
+						<div class="cpD-pjBT">
+							<span class="fl">新氧价：<b>￥680</b></span>
+							<span class="fl">定金：<b>￥680</b></span>
+							<p class="fl">价格不同价格不同价格不同价格不同价格不同</p>
+						</div>
+						<div class="cpD-pjBB">
+							<table cellpadding="0" cellspacing="0">
+								<tr class="cpD-tr01">
+									<td>买家（匿名）</td>
+									<td>定金</td>
+									<td>预约价格</td>
+									<td>成交时间</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>￥140</td>
+									<td>￥140</td>
+									<td>2016-05-06 19:56:28</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>￥140</td>
+									<td>￥140</td>
+									<td>2016-05-06 19:56:28</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>￥140</td>
+									<td>￥140</td>
+									<td>2016-05-06 19:56:28</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>￥140</td>
+									<td>￥140</td>
+									<td>2016-05-06 19:56:28</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="page">
+					<ul>
+						<li class="pageCur"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><a href="#">9</a></li>
+						<li><a href="#">10</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cpD-03R-002">
+				<div class="cpD-pj">
+					<div class="cpD-pjT">
+						<span>预约流程</span>
+					</div>
+					<div class="cpD-pjB">
+						<img src="__TMPL__statics/images/cpD03-tu6.png">
+					</div>
+				</div>
+			</div>
+			<div class="cpD-03R-002">
+				<div class="cpD-pj">
+					<div class="cpD-pjT">
+						<span>预约说明</span>
+					</div>
+					<div class="cpD-pjsm"> 1.预约说明预约说明预约说明预约说明预约说明预约说明预约说明<br>
+					  2.预约说明预约说明预约说明预约说明预约说明预约说明预约说明 </div>
+				</div>
+			</div>
+			<p><a href="#">查看退款和售后说明>></a></p>
+		</div>
+
+
+	</div>
+</div>
+<script>
+
+	 $(function(){
+
+            $(".cpD-03RT span").each(function(index){
+                $(this).click(function(){
+
+         		   $(this).addClass('spanCur').siblings().removeClass('spanCur');
+
+					if(index==0){
+					$('html,body').animate({scrollTop:$('#gd1').offset().top}, 800);}
+
+					if(index==1){
+					$('html,body').animate({scrollTop:$('#gd2').offset().top-49}, 800);}
+
+					if(index==2){
+					$('html,body').animate({scrollTop:$('#gd3').offset().top-47}, 800);}
+
+				
+                })
+            }) 
+
+           $(".xiaotu li").each(function(index){
+                $(this).mouseover(function(){
+
+         		   $(this).addClass('on').siblings().removeClass('on');
+				 $("#preview").attr("src",$(this).attr("data"));
+                })
+            }) 
+
+	$('.cpD-03RT').posfixed({
+		distance : 0,
+		pos : 'top',
+		type : 'while',
+		hide : false
+	});
+
+
+
+
+               
+        })
+
+
+
+</script>
+
+<div class="clear"></div>
+
+<include file="public:footer"/>

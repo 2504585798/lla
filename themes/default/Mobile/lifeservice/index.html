@@ -1,0 +1,50 @@
+<include file='public:header'/>    
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('housekeeping/main')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			家政预约
+		</div>
+	</header>
+	
+   <style>
+   .button-big {
+    padding:3px; 
+    font-size: 12px;
+    line-height: 12px;
+}
+
+   </style> 
+    
+
+<div class="xiaoqu-list">
+
+
+		<ul id="xiaoqu-list">
+        <php>$a =1;</php>
+       <foreach name="list" item="item"> 
+        <li class="line">
+	<a href="<{:U('lifeservice/detail',array('id'=>$a))}>" class="item fix hightitem">	
+		<div class="x3">
+                    <img src="__ROOT__/attachs/<{$item.photo}>">
+		</div>
+		<div class="x9">	
+			<h5>服务项目：<{$item.t}><a href="<{:U('lifeservice/detail',array('id'=>$a))}>" class="button button-big bg-yellow float-right">立即预约</a></h5>	
+            
+			<p class="addr">简介：<if condition="empty($item['title'])">暂无简介<else/><{:bao_msubstr($item['title'],0,16,true)}></if></p>
+            
+		</div>
+	</a>
+		</li>
+        <php>$a++;</php>
+		</foreach>
+
+
+</ul>  
+	</div>
+
+
+
+
+<include file='public:footer'/>  
